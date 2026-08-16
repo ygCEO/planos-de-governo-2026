@@ -8,7 +8,7 @@ O projeto não atribui notas, rankings ou resumos editoriais. A unidade principa
 
 - Metodologia 1.0 congelada antes da classificação de planos reais.
 - Metadados eleitorais monitorados nos arquivos consolidados e no DivulgaCandContas; divergências permanecem sinalizadas até a conciliação oficial.
-- PDFs identificados por hash e preparados para preservação imutável, sem sobrescrita.
+- PDFs preservados por hash em armazenamento imutável, sem sobrescrita.
 - Candidaturas aparecem como “em análise” até que o corpus completo e os 13 temas sejam revisados.
 - Nenhuma célula pendente é interpretada como ausência de proposta.
 
