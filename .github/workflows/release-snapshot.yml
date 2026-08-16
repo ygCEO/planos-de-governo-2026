@@ -13,6 +13,8 @@ on:
 
 permissions:
   contents: write
+  attestations: write
+  id-token: write
 
 concurrency:
   group: release-snapshot-${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
@@ -38,6 +40,13 @@ jobs:
           node-version: 22.13.0
           cache: npm
 
+      - name: Exigir GitHub CLI com verificador corrigido
+        run: |
+          set -euo pipefail
+          installed_version="$(gh --version | awk 'NR == 1 { print $3 }')"
+          dpkg --compare-versions "$installed_version" ge 2.97.0 || { echo "GitHub CLI $installed_version é vulnerável; requer 2.97.0 ou superior." >&2; exit 1; }
+          echo "GitHub CLI $installed_version apto para verificar proveniência."
+
       - name: Instalar dependências reproduzíveis
         run: npm ci --ignore-scripts
 
@@ -57,6 +66,8 @@ jobs:
           git verify-tag metodologia-v1.0
           git verify-tag "$tag"
           [[ "$(git rev-parse "$tag^{commit}")" == "$(git rev-parse HEAD)" ]] || { echo "Checkout não corresponde à tag." >&2; exit 1; }
+          git fetch --no-tags origin +refs/heads/main:refs/remotes/origin/main
+          git merge-base --is-ancestor "$tag^{commit}" refs/remotes/origin/main || { echo "A tag de dados não pertence à história protegida de main." >&2; exit 1; }
 
           methodology_commit="$(node --input-type=module -e 'import { readYaml } from "./scripts/lib/io.mjs"; const m = await readYaml("./content/releases/metodologia.yaml"); process.stdout.write(m.commit)')"
           [[ "$methodology_commit" == "$(git rev-parse metodologia-v1.0^{commit})" ]] || { echo "Snapshot não aponta para a tag metodológica." >&2; exit 1; }
@@ -75,7 +86,30 @@ jobs:
           npm run build
           node --test tests/*.test.mjs
 
+      - name: Recuperar release existente e validar imutabilidade
+        id: published
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          EVENT_NAME: ${{ github.event_name }}
+          TAG: ${{ steps.release.outputs.tag }}
+          SNAPSHOT: ${{ steps.release.outputs.snapshot }}
+        run: |
+          set -euo pipefail
+          archive="planos-de-governo-sites-${SNAPSHOT}.tar.gz"
+          handoff="sites-handoff-${SNAPSHOT}.json"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            [[ "$(gh release view "$TAG" --json isImmutable --jq '.isImmutable')" == "true" ]] || { echo "A release existente não é imutável." >&2; exit 1; }
+            gh release download "$TAG" --dir "$PWD" \
+              --pattern "$archive" --pattern "$archive.sha256" --pattern "$handoff"
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            [[ "$EVENT_NAME" == "push" ]] || { echo "A primeira publicação deve ser disparada pela tag assinada." >&2; exit 1; }
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Empacotar bundle compatível e criar handoff verificável
+        if: steps.published.outputs.exists != 'true'
         env:
           SNAPSHOT: ${{ steps.release.outputs.snapshot }}
           TAG: ${{ steps.release.outputs.tag }}
@@ -90,7 +124,38 @@ jobs:
           node .github/scripts/sites-handoff.mjs verify \
             --root "$PWD" --handoff "$handoff" --expected-commit "$(git rev-parse HEAD)"
 
+      - name: Atestar proveniência do bundle no workflow produtor
+        if: steps.published.outputs.exists != 'true'
+        uses: actions/attest@v4
+        with:
+          subject-path: ${{ github.workspace }}/planos-de-governo-sites-${{ steps.release.outputs.snapshot }}.tar.gz
+
+      - name: Verificar proveniência do bundle produtor
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ steps.release.outputs.tag }}
+          SNAPSHOT: ${{ steps.release.outputs.snapshot }}
+        run: |
+          set -euo pipefail
+          archive="planos-de-governo-sites-${SNAPSHOT}.tar.gz"
+          verified=false
+          for attempt in 1 2 3 4 5 6; do
+            if gh attestation verify "$archive" \
+              --repo "$GH_REPO" \
+              --signer-workflow "$GH_REPO/.github/workflows/release-snapshot.yml" \
+              --source-ref "refs/tags/$TAG" \
+              --source-digest "$(git rev-parse HEAD)" \
+              --deny-self-hosted-runners; then
+              verified=true
+              break
+            fi
+            sleep 5
+          done
+          [[ "$verified" == "true" ]] || { echo "A proveniência do bundle não corresponde ao workflow, tag e commit esperados." >&2; exit 1; }
+
       - name: Criar release pública sem alterar a tag assinada
+        if: steps.published.outputs.exists != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -100,20 +165,44 @@ jobs:
           set -euo pipefail
           archive="planos-de-governo-sites-${SNAPSHOT}.tar.gz"
           handoff="sites-handoff-${SNAPSHOT}.json"
-          if gh release view "$TAG" >/dev/null 2>&1; then
-            existing="$RUNNER_TEMP/existing-release"
-            mkdir -p "$existing"
-            gh release download "$TAG" --dir "$existing" \
-              --pattern "$archive" --pattern "$archive.sha256" --pattern "$handoff"
-            cmp --silent "$archive" "$existing/$archive" || { echo "Bundle existente diverge da reconstrução determinística." >&2; exit 1; }
-            cmp --silent "$archive.sha256" "$existing/$archive.sha256" || { echo "Checksum existente diverge da reconstrução." >&2; exit 1; }
-            cmp --silent "$handoff" "$existing/$handoff" || { echo "Handoff existente diverge da reconstrução." >&2; exit 1; }
-            echo "A release $TAG já contém assets idênticos; reexecução concluída sem mutação." >> "$GITHUB_STEP_SUMMARY"
-          else
-            gh release create "$TAG" "$archive" "$archive.sha256" "$handoff" \
-              --verify-tag \
-              --title "Dados $SNAPSHOT" \
-              --notes "Snapshot atômico $SNAPSHOT, validado contra a metodologia 1.0. O bundle compatível e o handoff identificam o commit exato para implantação autorizada no Sites."
+          gh release create "$TAG" "$archive" "$archive.sha256" "$handoff" \
+            --verify-tag \
+            --title "Dados $SNAPSHOT" \
+            --notes "Snapshot atômico $SNAPSHOT, validado contra a metodologia 1.0. O bundle compatível e o handoff identificam o commit exato para implantação autorizada no Sites."
+
+      - name: Verificar release imutável e seus três assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ steps.release.outputs.tag }}
+          SNAPSHOT: ${{ steps.release.outputs.snapshot }}
+          EXISTING: ${{ steps.published.outputs.exists }}
+        run: |
+          set -euo pipefail
+          archive="planos-de-governo-sites-${SNAPSHOT}.tar.gz"
+          handoff="sites-handoff-${SNAPSHOT}.json"
+          [[ "$(gh release view "$TAG" --json isImmutable --jq '.isImmutable')" == "true" ]] || { echo "A release publicada não está protegida por imutabilidade." >&2; exit 1; }
+
+          verified=false
+          for attempt in 1 2 3 4 5 6; do
+            if gh release verify "$TAG"; then
+              verified=true
+              break
+            fi
+            sleep 5
+          done
+          [[ "$verified" == "true" ]] || { echo "A atestação da release não ficou disponível." >&2; exit 1; }
+          for asset in "$archive" "$archive.sha256" "$handoff"; do
+            gh release verify-asset "$TAG" "$asset"
+          done
+          node .github/scripts/verify-release-assets.mjs \
+            --root "$PWD" \
+            --archive "$archive" \
+            --checksum "$archive.sha256" \
+            --handoff "$handoff" \
+            --expected-commit "$(git rev-parse HEAD)"
+          if [[ "$EXISTING" == "true" ]]; then
+            echo "A release $TAG já continha assets atestados; reexecução concluída sem mutação." >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - name: Guardar handoff validado para operador do Sites

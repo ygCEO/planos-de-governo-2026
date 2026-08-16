@@ -48,6 +48,7 @@ test("CI aplica validação, reprodução, lint, build e testes com privilégios
   assert.match(workflow, /npm run build/);
   assert.match(workflow, /node --test tests\/\*\.test\.mjs/);
   assert.doesNotMatch(workflow, /pull_request_target|contents:\s*write/i);
+  assert.match(packageJson.scripts.build, /^node scripts\/build\/clean-output\.mjs && /);
   assert.match(packageJson.scripts["test:audit"], /^node scripts\/data\/regression-checks\.mjs && /);
   assert.match(packageJson.scripts.ci, /npm run test:audit/);
 });
@@ -236,6 +237,9 @@ test("release exige tags SSH verificadas antes de publicar o bundle", async () =
 
   assert.match(workflow, /git verify-tag metodologia-v1\.0/);
   assert.match(workflow, /git verify-tag "\$tag"/);
+  assert.match(workflow, /git fetch --no-tags origin \+refs\/heads\/main:refs\/remotes\/origin\/main/);
+  assert.match(workflow, /git merge-base --is-ancestor "\$tag\^\{commit\}" refs\/remotes\/origin\/main/);
+  assert.match(workflow, /A tag de dados não pertence à história protegida de main/);
   assert.match(workflow, /import \{ readYaml \} from "\.\/scripts\/lib\/io\.mjs"/);
   assert.doesNotMatch(workflow, /require\([^\n]*\.yaml/);
   assert.match(workflow, /node scripts\/data\/build-snapshot\.mjs --check/);
@@ -243,13 +247,30 @@ test("release exige tags SSH verificadas antes de publicar o bundle", async () =
   assert.match(workflow, /node --test tests\/\*\.test\.mjs/);
   assert.match(workflow, /npm audit --audit-level=high/);
   assert.doesNotMatch(workflow, /npm audit[^\n]*--omit=dev/);
+  assert.match(workflow, /dpkg --compare-versions "\$installed_version" ge 2\.97\.0/);
+  assert.match(workflow, /GitHub CLI \$installed_version é vulnerável/);
   assert.match(workflow, /bash \.github\/scripts\/package-site\.sh/);
   assert.match(workflow, /sites-handoff\.mjs create/);
   assert.match(workflow, /sites-handoff\.mjs verify/);
+  assert.match(workflow, /verify-release-assets\.mjs/);
+  assert.match(workflow, /attestations: write/);
+  assert.match(workflow, /id-token: write/);
+  assert.match(workflow, /uses: actions\/attest@v4/);
+  assert.match(workflow, /subject-path: \$\{\{ github\.workspace \}\}\/planos-de-governo-sites-\$\{\{ steps\.release\.outputs\.snapshot \}\}\.tar\.gz/);
+  assert.match(workflow, /gh attestation verify "\$archive"/);
+  assert.match(workflow, /--repo "\$GH_REPO"/);
+  assert.match(workflow, /--signer-workflow "\$GH_REPO\/\.github\/workflows\/release-snapshot\.yml"/);
+  assert.match(workflow, /--source-ref "refs\/tags\/\$TAG"/);
+  assert.match(workflow, /--source-digest "\$\(git rev-parse HEAD\)"/);
+  assert.match(workflow, /--deny-self-hosted-runners/);
+  assert.match(workflow, /--json isImmutable --jq '\.isImmutable'/);
+  assert.match(workflow, /gh release verify "\$TAG"/);
+  assert.match(workflow, /gh release verify-asset "\$TAG" "\$asset"/);
+  assert.match(workflow, /A primeira publicação deve ser disparada pela tag assinada/);
   assert.match(workflow, /sites-handoff-\$\{SNAPSHOT\}\.json/);
   assert.match(workflow, /gh release download "\$TAG"/);
-  assert.match(workflow, /cmp --silent "\$archive"/);
-  assert.doesNotMatch(workflow, /gh release upload|--clobber/);
+  assert.match(workflow, /if: steps\.published\.outputs\.exists != 'true'/);
+  assert.doesNotMatch(workflow, /gh release upload|--clobber|cmp --silent/);
   assert.match(workflow, /gh release create "\$TAG"/);
   assert.match(workflow, /--verify-tag/);
   assert.doesNotMatch(workflow, /git tag\s|git push[^\n]*--tags/);
@@ -289,40 +310,39 @@ test("release exige tags SSH verificadas antes de publicar o bundle", async () =
   assert.equal(methodologyCommit, taggedCommit.trim());
 });
 
-test("reexecução da release é no-op para assets idênticos e rejeita divergência", async (t) => {
+test("reexecução valida os assets publicados e termina sem mutação", async (t) => {
   const workflow = await read(".github/workflows/release-snapshot.yml");
-  const runBlock = workflowRunBlock(workflow, "Criar release pública sem alterar a tag assinada");
+  const recoverBlock = workflowRunBlock(workflow, "Recuperar release existente e validar imutabilidade");
+  const provenanceBlock = workflowRunBlock(workflow, "Verificar proveniência do bundle produtor");
+  const verifyBlock = workflowRunBlock(workflow, "Verificar release imutável e seus três assets");
   const temporaryRoot = await mkdtemp(path.join(os.tmpdir(), "planos-release-rerun-"));
   t.after(() => rm(temporaryRoot, { recursive: true, force: true }));
   const existingRoot = path.join(temporaryRoot, "published");
-  const runnerRoot = path.join(temporaryRoot, "runner");
   const summary = path.join(temporaryRoot, "summary.md");
+  const output = path.join(temporaryRoot, "github-output.txt");
   const trace = path.join(temporaryRoot, "gh-args.txt");
   const snapshot = "2026-08-15.7";
   const archiveName = `planos-de-governo-sites-${snapshot}.tar.gz`;
   const checksumName = `${archiveName}.sha256`;
   const handoffName = `sites-handoff-${snapshot}.json`;
-  await Promise.all([
-    mkdir(existingRoot, { recursive: true }),
-    mkdir(runnerRoot, { recursive: true }),
-  ]);
+  await mkdir(existingRoot, { recursive: true });
   const assets = new Map([
     [archiveName, "bundle-imutável\n"],
     [checksumName, `hash  ${archiveName}\n`],
     [handoffName, '{"schemaVersion":"1.0"}\n'],
   ]);
   for (const [filename, contents] of assets) {
-    await Promise.all([
-      writeFile(path.join(temporaryRoot, filename), contents),
-      writeFile(path.join(existingRoot, filename), contents),
-    ]);
+    await writeFile(path.join(existingRoot, filename), contents);
   }
 
   const script = path.join(temporaryRoot, "release.sh");
   await writeFile(script, [
     "gh() {",
     "  printf '%s\\n' \"$*\" >> \"$TRACE\"",
-    "  if [[ \"$1 $2\" == \"release view\" ]]; then return 0; fi",
+    "  if [[ \"$1 $2\" == \"release view\" ]]; then",
+    "    if [[ \"$*\" == *\"--json isImmutable\"* ]]; then printf 'true\\n'; fi",
+    "    return 0",
+    "  fi",
     "  if [[ \"$1 $2\" == \"release download\" ]]; then",
     "    shift 2",
     "    local destination=''",
@@ -334,9 +354,16 @@ test("reexecução da release é no-op para assets idênticos e rejeita divergê
     "    cp \"$EXISTING_ROOT/$HANDOFF_NAME\" \"$destination/$HANDOFF_NAME\"",
     "    return 0",
     "  fi",
+    "  if [[ \"$1 $2\" == \"attestation verify\" ]]; then [[ \"${ATTESTATION_OK:-true}\" == \"true\" ]]; return; fi",
+    "  if [[ \"$1 $2\" == \"release verify\" || \"$1 $2\" == \"release verify-asset\" ]]; then return 0; fi",
     "  return 97",
     "}",
-    runBlock,
+    "sleep() { return 0; }",
+    "node() { printf 'node %s\\n' \"$*\" >> \"$TRACE\"; return 0; }",
+    "git() { printf '%s\\n' \"${EXPECTED_COMMIT}\"; }",
+    recoverBlock,
+    provenanceBlock,
+    verifyBlock,
   ].join("\n"));
   const env = {
     ...process.env,
@@ -345,22 +372,52 @@ test("reexecução da release é no-op para assets idênticos e rejeita divergê
     ARCHIVE_NAME: archiveName,
     CHECKSUM_NAME: checksumName,
     HANDOFF_NAME: handoffName,
-    RUNNER_TEMP: runnerRoot,
     GITHUB_STEP_SUMMARY: summary,
+    GITHUB_OUTPUT: output,
+    EXPECTED_COMMIT: "a".repeat(40),
+    ATTESTATION_OK: "true",
+    GH_REPO: "exemplo/planos-de-governo-2026",
+    EVENT_NAME: "workflow_dispatch",
+    EXISTING: "true",
     TAG: `dados-${snapshot}`,
     SNAPSHOT: snapshot,
   };
 
   await execFileAsync("bash", [script], { cwd: temporaryRoot, env });
   assert.match(await readFile(summary, "utf8"), /reexecução concluída sem mutação/);
-  assert.doesNotMatch(await readFile(trace, "utf8"), /release (?:create|upload)/);
+  assert.match(await readFile(output, "utf8"), /^exists=true$/m);
+  const calls = await readFile(trace, "utf8");
+  assert.match(calls, /release download/);
+  assert.match(
+    calls,
+    new RegExp(
+      `attestation verify ${archiveName} --repo exemplo/planos-de-governo-2026 `
+      + `--signer-workflow exemplo/planos-de-governo-2026/\\.github/workflows/release-snapshot\\.yml `
+      + `--source-ref refs/tags/dados-${snapshot.replaceAll(".", "\\.")} `
+      + `--source-digest ${"a".repeat(40)} --deny-self-hosted-runners`,
+    ),
+  );
+  assert.match(calls, /release verify dados-2026-08-15\.7/);
+  assert.equal((calls.match(/release verify-asset/g) ?? []).length, 3);
+  assert.match(calls, /node \.github\/scripts\/verify-release-assets\.mjs/);
+  assert.doesNotMatch(calls, /release (?:create|upload)/);
+  assert.ok(
+    workflow.indexOf("Recuperar release existente e validar imutabilidade")
+      < workflow.indexOf("Empacotar bundle compatível e criar handoff verificável"),
+  );
 
-  await writeFile(path.join(existingRoot, archiveName), "bundle-divergente\n");
+  await writeFile(trace, "");
   await assert.rejects(
-    execFileAsync("bash", [script], { cwd: temporaryRoot, env }),
+    execFileAsync("bash", [script], {
+      cwd: temporaryRoot,
+      env: { ...env, ATTESTATION_OK: "false" },
+    }),
     (error) => {
-      assert.match(error.stderr, /Bundle existente diverge da reconstrução determinística/);
+      assert.match(error.stderr, /A proveniência do bundle não corresponde ao workflow, tag e commit esperados/);
       return true;
     },
   );
+  const rejectedCalls = await readFile(trace, "utf8");
+  assert.equal((rejectedCalls.match(/attestation verify/g) ?? []).length, 6);
+  assert.doesNotMatch(rejectedCalls, /release verify dados-/);
 });

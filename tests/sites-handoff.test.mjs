@@ -10,6 +10,7 @@ import {
   createSitesHandoff,
   verifySitesHandoff,
 } from "../.github/scripts/sites-handoff.mjs";
+import { verifyReleaseAssets } from "../.github/scripts/verify-release-assets.mjs";
 
 const execFileAsync = promisify(execFile);
 const packageScript = fileURLToPath(new URL("../.github/scripts/package-site.sh", import.meta.url));
@@ -96,5 +97,32 @@ test("handoff vincula bundle, manifesto, metodologia, tag e commit exatos", asyn
   await assert.rejects(
     verifySitesHandoff({ root, handoff: handoffPath, expectedCommit: commit }),
     /hash do bundle diverge/,
+  );
+});
+
+test("assets publicados vinculam checksum, handoff e commit sem reconstruir segredos", async (t) => {
+  const { root } = await fixture(t);
+  const archive = path.join(root, "planos-de-governo-sites-2026-08-15.7.tar.gz");
+  const checksum = `${archive}.sha256`;
+  const handoffPath = path.join(root, "sites-handoff-2026-08-15.7.json");
+  await execFileAsync("bash", [packageScript, root, archive]);
+  const handoff = await createSitesHandoff({ root, tag: "dados-2026-08-15.7", commit, archive });
+  await Promise.all([
+    writeFile(checksum, `${handoff.archiveSha256}  ${path.basename(archive)}\n`),
+    writeFile(handoffPath, `${JSON.stringify(handoff, null, 2)}\n`),
+  ]);
+
+  assert.equal((await verifyReleaseAssets({
+    root,
+    archive,
+    checksum,
+    handoff: handoffPath,
+    expectedCommit: commit,
+  })).commit, commit);
+
+  await writeFile(checksum, `${"0".repeat(64)}  ${path.basename(archive)}\n`);
+  await assert.rejects(
+    verifyReleaseAssets({ root, archive, checksum, handoff: handoffPath, expectedCommit: commit }),
+    /checksum publicado diverge/,
   );
 });
