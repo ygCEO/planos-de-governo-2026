@@ -1,0 +1,71 @@
+name: Validar e construir
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-build-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-build:
+    name: Dados, qualidade e build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Obter o repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.13.0
+          cache: npm
+
+      - name: Instalar dependências reproduzíveis
+        run: npm ci --ignore-scripts
+
+      - name: Auditar dependências e cadeia de build
+        run: npm audit --audit-level=high
+
+      - name: Validar dados editoriais
+        run: |
+          node scripts/data/validate.mjs
+          node scripts/data/regression-checks.mjs
+
+      - name: Reproduzir exportações públicas
+        run: node scripts/data/build-snapshot.mjs --check
+
+      - name: Confirmar snapshot versionado
+        run: |
+          set -euo pipefail
+          if [[ -n "$(git status --porcelain --untracked-files=all -- public/dados)" ]]; then
+            git status --short -- public/dados
+            echo "As exportações versionadas não correspondem aos dados editoriais." >&2
+            exit 1
+          fi
+
+      - name: Verificar código
+        run: npm run lint
+
+      - name: Construir para produção
+        run: npm run build
+
+      - name: Executar testes de auditoria e rotas
+        run: node --test tests/*.test.mjs
+
+      - name: Guardar build para inspeção
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-${{ github.sha }}
+          path: dist/
+          if-no-files-found: error
+          retention-days: 7

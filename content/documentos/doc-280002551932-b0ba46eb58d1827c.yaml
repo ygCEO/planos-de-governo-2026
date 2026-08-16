@@ -1,0 +1,34 @@
+{
+  "byteSize": 1000707,
+  "candidacyId": "280002551932",
+  "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+  "capturedAt": "2026-08-15T19:35:53.000Z",
+  "id": "doc-280002551932-b0ba46eb58d1827c",
+  "mimeType": "application/pdf",
+  "officialFilename": "Plano de Governo Ronaldo Caiado Presidente.pdf",
+  "pageCount": 100,
+  "pageCountVerified": false,
+  "preservationStatus": "pending_upload",
+  "preservedObjectKey": "pdf/b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415.pdf",
+  "preservedPublicUrl": null,
+  "sha256": "b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415",
+  "sources": [
+    {
+      "archiveEntry": "BR/2026BR280002551932_01.pdf",
+      "documentId": null,
+      "kind": "ckan_zip",
+      "observedAt": "2026-08-15T06:47:19.000Z",
+      "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+    },
+    {
+      "archiveEntry": null,
+      "documentId": "280017106566",
+      "kind": "divulgacand_rest",
+      "observedAt": "2026-08-15T19:35:53.000Z",
+      "resourceId": null,
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566"
+    }
+  ],
+  "supersedesDocumentId": null
+}

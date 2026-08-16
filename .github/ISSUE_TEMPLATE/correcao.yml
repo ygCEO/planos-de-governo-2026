@@ -1,0 +1,71 @@
+name: Solicitar correção editorial
+description: Aponte uma divergência verificável entre o site e um documento oficial do TSE.
+title: "[Correção] "
+labels:
+  - correcao
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por ajudar a tornar a comparação mais precisa. Este formulário é público.
+
+        **Não inclua CPF, título eleitoral, endereço, telefone, e-mail ou qualquer outro dado pessoal.** Use apenas identificadores editoriais públicos e documentos oficiais do TSE.
+
+  - type: input
+    id: affected_url
+    attributes:
+      label: Página ou identificador afetado
+      description: Informe a URL do site ou o ID público da proposta/candidatura.
+      placeholder: https://exemplo/… ou prop-…
+    validations:
+      required: true
+
+  - type: input
+    id: official_source
+    attributes:
+      label: Documento oficial do TSE
+      description: Cole o link canônico público do documento no TSE.
+      placeholder: https://divulgacandcontas.tse.jus.br/…
+    validations:
+      required: true
+
+  - type: input
+    id: page_reference
+    attributes:
+      label: Página e seção
+      description: Informe a página física do PDF e, se houver, o número impresso e a seção.
+      placeholder: Página física 12, impressa 10, seção Saúde
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_content
+    attributes:
+      label: O que o site mostra hoje
+      description: Transcreva somente o trecho necessário para identificar a divergência.
+    validations:
+      required: true
+
+  - type: textarea
+    id: requested_correction
+    attributes:
+      label: Correção solicitada e justificativa
+      description: Explique objetivamente o que deve mudar e por quê, com base na fonte oficial.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: privacy_confirmation
+    attributes:
+      label: Confirmação de privacidade
+      options:
+        - label: Revisei o texto e ele não contém dados pessoais nem anexos com dados pessoais.
+          required: true
+
+  - type: checkboxes
+    id: source_confirmation
+    attributes:
+      label: Confirmação da fonte
+      options:
+        - label: A solicitação se baseia em documento oficial do TSE, não em material de campanha ou rede social.
+          required: true

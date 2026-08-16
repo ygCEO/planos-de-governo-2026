@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Consultar dados oficiais do TSE
+    url: https://dadosabertos.tse.jus.br/dataset/candidatos-2026
+    about: Confirme a fonte eleitoral oficial antes de solicitar uma correção editorial.

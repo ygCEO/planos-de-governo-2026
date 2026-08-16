@@ -1,0 +1,26 @@
+{
+  "byteSize": 64568,
+  "candidacyId": "280002552484",
+  "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113380",
+  "capturedAt": "2026-08-15T19:35:53.000Z",
+  "id": "doc-280002552484-6390152c66285558",
+  "mimeType": "application/pdf",
+  "officialFilename": "PLANO DE GOVERNO.pdf",
+  "pageCount": null,
+  "pageCountVerified": false,
+  "preservationStatus": "pending_upload",
+  "preservedObjectKey": "pdf/6390152c66285558ecd5459f4f73f3f65650beb77022b14e7750190b1b536d68.pdf",
+  "preservedPublicUrl": null,
+  "sha256": "6390152c66285558ecd5459f4f73f3f65650beb77022b14e7750190b1b536d68",
+  "sources": [
+    {
+      "archiveEntry": null,
+      "documentId": "280017113380",
+      "kind": "divulgacand_rest",
+      "observedAt": "2026-08-15T19:35:53.000Z",
+      "resourceId": null,
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113380"
+    }
+  ],
+  "supersedesDocumentId": null
+}

@@ -1,0 +1,55 @@
+{
+  "ballotName": "RONALDO CAIADO",
+  "ballotNumber": 55,
+  "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+  "editorialStatus": "pending",
+  "electionYear": 2026,
+  "id": "280002551932",
+  "jurisdiction": "BR",
+  "observedDocumentCorpora": {
+    "restSha256s": [
+      "b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415"
+    ],
+    "zipSha256s": [
+      "b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415"
+    ]
+  },
+  "observedDocumentSha256s": [
+    "b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415"
+  ],
+  "office": "presidente",
+  "officialStatus": {
+    "code": "-3",
+    "label": "Aguardando julgamento",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "source": "reconciled"
+  },
+  "officialTotalizationStatus": {
+    "label": "Concorrendo",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "source": "divulgacand-rest"
+  },
+  "party": {
+    "acronym": "PSD",
+    "name": "PARTIDO SOCIAL DEMOCRÁTICO"
+  },
+  "planDocumentIds": [
+    "doc-280002551932-b0ba46eb58d1827c"
+  ],
+  "quality": {
+    "coldReviewCompletedAt": null,
+    "firstPassCompletedAt": null,
+    "readingHours": null,
+    "retestCompletedAt": null,
+    "secondPassCompletedAt": null
+  },
+  "reconciliationStatus": "reconciled",
+  "sourceIds": {
+    "csvCandidateId": "280002551932",
+    "csvElectionCode": "6257",
+    "restCandidateId": "280002551932",
+    "restElectionId": "20322002026"
+  },
+  "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+  "sqCandidate": "280002551932"
+}

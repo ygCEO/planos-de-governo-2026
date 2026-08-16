@@ -1,0 +1,128 @@
+name: Verificar e publicar snapshot
+
+on:
+  push:
+    tags:
+      - "dados-*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag assinada no formato dados-AAAA-MM-DD.N
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-snapshot-${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Assinatura, dados, testes e release
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: snapshot-release
+
+    steps:
+      - name: Obter exatamente a tag solicitada
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref }}
+          fetch-depth: 0
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.13.0
+          cache: npm
+
+      - name: Instalar dependências reproduzíveis
+        run: npm ci --ignore-scripts
+
+      - name: Auditar dependências e cadeia de build
+        run: npm audit --audit-level=high
+
+      - name: Verificar tags SSH e vínculo com a metodologia
+        id: release
+        env:
+          REQUESTED_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
+        run: |
+          set -euo pipefail
+          tag="$REQUESTED_TAG"
+          [[ "$tag" =~ ^dados-([0-9]{4}-[0-9]{2}-[0-9]{2}\.[0-9]+)$ ]] || { echo "Tag inválida: $tag" >&2; exit 1; }
+          snapshot="${BASH_REMATCH[1]}"
+          git config gpg.ssh.allowedSignersFile "$PWD/.github/release-signers"
+          git verify-tag metodologia-v1.0
+          git verify-tag "$tag"
+          [[ "$(git rev-parse "$tag^{commit}")" == "$(git rev-parse HEAD)" ]] || { echo "Checkout não corresponde à tag." >&2; exit 1; }
+
+          methodology_commit="$(node --input-type=module -e 'import { readYaml } from "./scripts/lib/io.mjs"; const m = await readYaml("./content/releases/metodologia.yaml"); process.stdout.write(m.commit)')"
+          [[ "$methodology_commit" == "$(git rev-parse metodologia-v1.0^{commit})" ]] || { echo "Snapshot não aponta para a tag metodológica." >&2; exit 1; }
+          actual_snapshot="$(node -e 'const m=require("./public/dados/latest/manifest.json"); process.stdout.write(m.id)')"
+          [[ "$actual_snapshot" == "$snapshot" ]] || { echo "Manifesto $actual_snapshot não corresponde à tag $tag." >&2; exit 1; }
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "snapshot=$snapshot" >> "$GITHUB_OUTPUT"
+
+      - name: Validar, construir e testar o artefato marcado
+        run: |
+          set -euo pipefail
+          node scripts/data/validate.mjs
+          node scripts/data/regression-checks.mjs
+          node scripts/data/build-snapshot.mjs --check
+          npm run lint
+          npm run build
+          node --test tests/*.test.mjs
+
+      - name: Empacotar bundle compatível e criar handoff verificável
+        env:
+          SNAPSHOT: ${{ steps.release.outputs.snapshot }}
+          TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          set -euo pipefail
+          archive="planos-de-governo-sites-${SNAPSHOT}.tar.gz"
+          handoff="sites-handoff-${SNAPSHOT}.json"
+          bash .github/scripts/package-site.sh "$PWD" "$archive"
+          sha256sum "$archive" > "$archive.sha256"
+          node .github/scripts/sites-handoff.mjs create \
+            --root "$PWD" --tag "$TAG" --commit "$(git rev-parse HEAD)" --archive "$archive" > "$handoff"
+          node .github/scripts/sites-handoff.mjs verify \
+            --root "$PWD" --handoff "$handoff" --expected-commit "$(git rev-parse HEAD)"
+
+      - name: Criar release pública sem alterar a tag assinada
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ steps.release.outputs.tag }}
+          SNAPSHOT: ${{ steps.release.outputs.snapshot }}
+        run: |
+          set -euo pipefail
+          archive="planos-de-governo-sites-${SNAPSHOT}.tar.gz"
+          handoff="sites-handoff-${SNAPSHOT}.json"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            existing="$RUNNER_TEMP/existing-release"
+            mkdir -p "$existing"
+            gh release download "$TAG" --dir "$existing" \
+              --pattern "$archive" --pattern "$archive.sha256" --pattern "$handoff"
+            cmp --silent "$archive" "$existing/$archive" || { echo "Bundle existente diverge da reconstrução determinística." >&2; exit 1; }
+            cmp --silent "$archive.sha256" "$existing/$archive.sha256" || { echo "Checksum existente diverge da reconstrução." >&2; exit 1; }
+            cmp --silent "$handoff" "$existing/$handoff" || { echo "Handoff existente diverge da reconstrução." >&2; exit 1; }
+            echo "A release $TAG já contém assets idênticos; reexecução concluída sem mutação." >> "$GITHUB_STEP_SUMMARY"
+          else
+            gh release create "$TAG" "$archive" "$archive.sha256" "$handoff" \
+              --verify-tag \
+              --title "Dados $SNAPSHOT" \
+              --notes "Snapshot atômico $SNAPSHOT, validado contra a metodologia 1.0. O bundle compatível e o handoff identificam o commit exato para implantação autorizada no Sites."
+          fi
+
+      - name: Guardar handoff validado para operador do Sites
+        uses: actions/upload-artifact@v4
+        with:
+          name: sites-${{ steps.release.outputs.snapshot }}
+          path: |
+            planos-de-governo-sites-${{ steps.release.outputs.snapshot }}.tar.gz
+            planos-de-governo-sites-${{ steps.release.outputs.snapshot }}.tar.gz.sha256
+            sites-handoff-${{ steps.release.outputs.snapshot }}.json
+          if-no-files-found: error
+          retention-days: 30

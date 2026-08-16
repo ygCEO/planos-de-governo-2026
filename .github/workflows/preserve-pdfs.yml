@@ -1,0 +1,124 @@
+name: Preservar PDFs no R2
+
+on:
+  workflow_dispatch:
+    inputs:
+      snapshot_id:
+        description: Snapshot esperado (AAAA-MM-DD.N); vazio usa o atual
+        required: false
+        type: string
+      dry_run:
+        description: Preparar e verificar sem enviar ao R2
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: preserve-pdfs-r2
+  cancel-in-progress: false
+
+jobs:
+  preserve:
+    name: Validar e preservar objetos por SHA-256
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment: r2-pdf-archive
+
+    steps:
+      - name: Obter o repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.13.0
+          cache: npm
+
+      - name: Instalar dependências reproduzíveis
+        run: npm ci --ignore-scripts
+
+      - name: Validar snapshot editorial
+        run: |
+          set -euo pipefail
+          node scripts/data/validate.mjs
+          node scripts/data/regression-checks.mjs
+          node scripts/data/build-snapshot.mjs --check
+
+      - name: Recuperar e validar PDFs oficiais
+        run: node scripts/tse/stage-pdfs.mjs
+
+      - name: Confirmar manifesto e snapshot solicitado
+        env:
+          EXPECTED_SNAPSHOT: ${{ inputs.snapshot_id }}
+        run: |
+          set -euo pipefail
+          node scripts/tse/stage-pdfs.mjs --check
+          actual="$(node -e 'const m=require("./.wrangler/r2-staging/upload-manifest.json"); process.stdout.write(m.snapshotId)')"
+          if [[ -n "${EXPECTED_SNAPSHOT:-}" && "$actual" != "$EXPECTED_SNAPSHOT" ]]; then
+            echo "Snapshot preparado ($actual) difere do solicitado ($EXPECTED_SNAPSHOT)." >&2
+            exit 1
+          fi
+          echo "Snapshot preparado: $actual" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verificar configuração segura do Sites
+        if: inputs.dry_run == false
+        env:
+          PDF_UPLOAD_ORIGIN: ${{ vars.PDF_UPLOAD_ORIGIN }}
+          PDF_UPLOAD_TOKEN: ${{ secrets.PDF_UPLOAD_TOKEN }}
+        run: |
+          set -euo pipefail
+          test -n "$PDF_UPLOAD_ORIGIN" || { echo "Variável PDF_UPLOAD_ORIGIN ausente." >&2; exit 1; }
+          test -n "$PDF_UPLOAD_TOKEN" || { echo "Secret PDF_UPLOAD_TOKEN ausente." >&2; exit 1; }
+
+      - name: Enviar pelo endpoint autenticado e revalidar pela rota pública
+        if: inputs.dry_run == false
+        env:
+          PDF_UPLOAD_ORIGIN: ${{ vars.PDF_UPLOAD_ORIGIN }}
+          PDF_UPLOAD_TOKEN: ${{ secrets.PDF_UPLOAD_TOKEN }}
+        run: |
+          set -euo pipefail
+          node scripts/tse/upload-pdfs.mjs \
+            --manifest .wrangler/r2-staging/upload-manifest.json \
+            --origin "$PDF_UPLOAD_ORIGIN"
+          node scripts/tse/mark-pdfs-preserved.mjs \
+            --manifest .wrangler/r2-staging/upload-manifest.json \
+            --base-url /arquivos \
+            --origin "$PDF_UPLOAD_ORIGIN"
+          node scripts/data/validate.mjs
+          node scripts/data/regression-checks.mjs
+          node scripts/data/build-snapshot.mjs
+          node scripts/data/build-snapshot.mjs --check
+
+      - name: Abrir pull request da preservação verificada
+        if: inputs.dry_run == false
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if [[ -z "$(git status --porcelain --untracked-files=all -- content public/dados lib/data/generated)" ]]; then
+            echo "Metadados de preservação já estavam atualizados; nenhum PR necessário." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          snapshot="$(node -e 'const m=require("./public/dados/latest/manifest.json"); process.stdout.write(m.id)')"
+          branch="automation/preserve-pdfs-${snapshot}-${GITHUB_RUN_ID}"
+          git switch -c "$branch"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/documentos content/releases public/dados lib/data/generated/latest.json
+          git commit -m "data: registrar PDFs preservados no R2"
+          git push origin "$branch"
+          gh pr create \
+            --base main \
+            --head "$branch" \
+            --title "data: registrar PDFs preservados no R2" \
+            --body "Objetos do snapshot $snapshot enviados por chave SHA-256, baixados novamente e conferidos antes desta atualização. A publicação permanece condicionada ao CI e à revisão humana."
+          echo "Pull request criado para o snapshot $snapshot." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Registrar simulação segura
+        if: inputs.dry_run == true
+        run: echo "Simulação concluída; nenhum objeto foi enviado ao R2." >> "$GITHUB_STEP_SUMMARY"

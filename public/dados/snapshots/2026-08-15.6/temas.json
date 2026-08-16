@@ -1,0 +1,138 @@
+[
+  {
+    "boundaryExamples": [],
+    "id": "economia-impostos",
+    "order": 1,
+    "residual": false,
+    "scope": "Política fiscal, tributação, inflação, juros, dívida pública e câmbio.",
+    "shortTitle": "Economia",
+    "title": "Economia e impostos"
+  },
+  {
+    "boundaryExamples": [],
+    "id": "emprego-renda",
+    "order": 2,
+    "residual": false,
+    "scope": "Mercado de trabalho, salário mínimo, qualificação profissional, empreendedorismo e MEI.",
+    "shortTitle": "Emprego e renda",
+    "title": "Emprego e renda"
+  },
+  {
+    "boundaryExamples": [],
+    "id": "saude",
+    "order": 3,
+    "residual": false,
+    "scope": "SUS, financiamento, filas, atenção básica, saúde mental e vigilância sanitária.",
+    "shortTitle": "Saúde",
+    "title": "Saúde"
+  },
+  {
+    "boundaryExamples": [
+      "Merenda escolar",
+      "Ensino universitário"
+    ],
+    "id": "educacao",
+    "order": 4,
+    "residual": false,
+    "scope": "Educação básica, superior e técnica, creches, alfabetização, carreira docente e merenda.",
+    "shortTitle": "Educação",
+    "title": "Educação"
+  },
+  {
+    "boundaryExamples": [],
+    "id": "seguranca-justica",
+    "order": 5,
+    "residual": false,
+    "scope": "Policiamento, armas, sistema prisional, fronteiras, política de drogas e Judiciário.",
+    "shortTitle": "Segurança e justiça",
+    "title": "Segurança pública e justiça"
+  },
+  {
+    "boundaryExamples": [
+      "Segurança alimentar"
+    ],
+    "id": "programas-sociais-habitacao",
+    "order": 6,
+    "residual": false,
+    "scope": "Transferência de renda, combate à fome e à pobreza, habitação popular e segurança alimentar.",
+    "shortTitle": "Programas sociais",
+    "title": "Programas sociais e habitação"
+  },
+  {
+    "boundaryExamples": [
+      "Metas de emissões"
+    ],
+    "id": "meio-ambiente-clima",
+    "order": 7,
+    "residual": false,
+    "scope": "Desmatamento, emissões, biodiversidade, política climática e licenciamento ambiental.",
+    "shortTitle": "Meio ambiente",
+    "title": "Meio ambiente e clima"
+  },
+  {
+    "boundaryExamples": [
+      "Saneamento",
+      "Geração de energia"
+    ],
+    "id": "infraestrutura-energia",
+    "order": 8,
+    "residual": false,
+    "scope": "Transporte, geração e matriz energética, saneamento, telecomunicações e obras.",
+    "shortTitle": "Infraestrutura",
+    "title": "Infraestrutura e energia"
+  },
+  {
+    "boundaryExamples": [
+      "Crédito rural"
+    ],
+    "id": "agricultura-agronegocio",
+    "order": 9,
+    "residual": false,
+    "scope": "Crédito rural, agricultura familiar, seguro rural, reforma agrária e exportação agropecuária.",
+    "shortTitle": "Agricultura",
+    "title": "Agricultura e agronegócio"
+  },
+  {
+    "boundaryExamples": [],
+    "id": "estado-instituicoes",
+    "order": 10,
+    "residual": false,
+    "scope": "Reforma administrativa, combate à corrupção, privatizações e relações entre Poderes.",
+    "shortTitle": "Estado e instituições",
+    "title": "Estado e instituições"
+  },
+  {
+    "boundaryExamples": [
+      "Pesquisa universitária"
+    ],
+    "id": "tecnologia-ciencia-inovacao",
+    "order": 11,
+    "residual": false,
+    "scope": "Digitalização de serviços, inteligência artificial, pesquisa e produção científica universitária.",
+    "shortTitle": "Ciência e tecnologia",
+    "title": "Tecnologia, ciência e inovação"
+  },
+  {
+    "boundaryExamples": [
+      "Comércio exterior"
+    ],
+    "id": "politica-externa-defesa",
+    "order": 12,
+    "residual": false,
+    "scope": "Relações internacionais, comércio exterior, Forças Armadas e soberania.",
+    "shortTitle": "Política externa",
+    "title": "Política externa e defesa"
+  },
+  {
+    "boundaryExamples": [
+      "Cultura",
+      "Esporte"
+    ],
+    "id": "outros-temas",
+    "order": 13,
+    "residual": true,
+    "scope": "Tema residual para propostas cujo objeto principal não cabe nos doze temas anteriores.",
+    "shortTitle": "Outros temas",
+    "title": "Outros temas"
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "ballotName": "FLAVIO BOLSONARO",
+  "ballotNumber": 22,
+  "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+  "editorialStatus": "pending",
+  "electionYear": 2026,
+  "id": "280002551544",
+  "jurisdiction": "BR",
+  "observedDocumentCorpora": {
+    "restSha256s": [
+      "7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4"
+    ],
+    "zipSha256s": [
+      "7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4"
+    ]
+  },
+  "observedDocumentSha256s": [
+    "7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4"
+  ],
+  "office": "presidente",
+  "officialStatus": {
+    "code": "-3",
+    "label": "Aguardando julgamento",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "source": "reconciled"
+  },
+  "officialTotalizationStatus": {
+    "label": "Concorrendo",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "source": "divulgacand-rest"
+  },
+  "party": {
+    "acronym": "PL",
+    "name": "PARTIDO LIBERAL"
+  },
+  "planDocumentIds": [
+    "doc-280002551544-7d1d95075e11e3c4"
+  ],
+  "quality": {
+    "coldReviewCompletedAt": null,
+    "firstPassCompletedAt": null,
+    "readingHours": null,
+    "retestCompletedAt": null,
+    "secondPassCompletedAt": null
+  },
+  "reconciliationStatus": "reconciled",
+  "sourceIds": {
+    "csvCandidateId": "280002551544",
+    "csvElectionCode": "6257",
+    "restCandidateId": "280002551544",
+    "restElectionId": "20322002026"
+  },
+  "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+  "sqCandidate": "280002551544"
+}

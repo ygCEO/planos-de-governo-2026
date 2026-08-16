@@ -1,0 +1,34 @@
+{
+  "byteSize": 1940855,
+  "candidacyId": "280002551544",
+  "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104726",
+  "capturedAt": "2026-08-15T19:35:53.000Z",
+  "id": "doc-280002551544-7d1d95075e11e3c4",
+  "mimeType": "application/pdf",
+  "officialFilename": "DiretrizesPlanodeGovernoFlavioBolsonaro20272030versaofinal.pdf",
+  "pageCount": null,
+  "pageCountVerified": false,
+  "preservationStatus": "pending_upload",
+  "preservedObjectKey": "pdf/7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4.pdf",
+  "preservedPublicUrl": null,
+  "sha256": "7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4",
+  "sources": [
+    {
+      "archiveEntry": "BR/2026BR280002551544_01.pdf",
+      "documentId": null,
+      "kind": "ckan_zip",
+      "observedAt": "2026-08-15T06:47:19.000Z",
+      "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+    },
+    {
+      "archiveEntry": null,
+      "documentId": "280017104726",
+      "kind": "divulgacand_rest",
+      "observedAt": "2026-08-15T19:35:53.000Z",
+      "resourceId": null,
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104726"
+    }
+  ],
+  "supersedesDocumentId": null
+}

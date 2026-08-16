@@ -1,0 +1,34 @@
+{
+  "byteSize": 1612696,
+  "candidacyId": "280002548139",
+  "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017075366",
+  "capturedAt": "2026-08-15T19:35:53.000Z",
+  "id": "doc-280002548139-df2acdb7a6d8b080",
+  "mimeType": "application/pdf",
+  "officialFilename": "Brasil em Primeiro Lugar.pdf",
+  "pageCount": 58,
+  "pageCountVerified": false,
+  "preservationStatus": "pending_upload",
+  "preservedObjectKey": "pdf/df2acdb7a6d8b080d6d8a235b8fe8f0d987bf0f24be4f4aa9abc80e4ebb24904.pdf",
+  "preservedPublicUrl": null,
+  "sha256": "df2acdb7a6d8b080d6d8a235b8fe8f0d987bf0f24be4f4aa9abc80e4ebb24904",
+  "sources": [
+    {
+      "archiveEntry": "BR/2026BR280002548139_01.pdf",
+      "documentId": null,
+      "kind": "ckan_zip",
+      "observedAt": "2026-08-15T06:47:19.000Z",
+      "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+    },
+    {
+      "archiveEntry": null,
+      "documentId": "280017075366",
+      "kind": "divulgacand_rest",
+      "observedAt": "2026-08-15T19:35:53.000Z",
+      "resourceId": null,
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017075366"
+    }
+  ],
+  "supersedesDocumentId": null
+}

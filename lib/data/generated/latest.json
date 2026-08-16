@@ -1,0 +1,3129 @@
+{
+  "candidacies": [
+    {
+      "ballotName": "CLARIANA BARAO",
+      "ballotNumber": 27,
+      "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+      "editorialStatus": "awaiting_consolidation",
+      "electionYear": 2026,
+      "id": "280002552484",
+      "jurisdiction": "BR",
+      "observedDocumentCorpora": {
+        "restSha256s": [
+          "6390152c66285558ecd5459f4f73f3f65650beb77022b14e7750190b1b536d68"
+        ],
+        "zipSha256s": []
+      },
+      "observedDocumentSha256s": [
+        "6390152c66285558ecd5459f4f73f3f65650beb77022b14e7750190b1b536d68"
+      ],
+      "office": "presidente",
+      "officialStatus": {
+        "code": "-3",
+        "label": "Aguardando julgamento",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "reconciled"
+      },
+      "officialTotalizationStatus": {
+        "label": "Concorrendo",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "party": {
+        "acronym": "DC",
+        "name": "DEMOCRACIA CRISTÃ"
+      },
+      "planDocumentIds": [
+        "doc-280002552484-6390152c66285558"
+      ],
+      "quality": {
+        "coldReviewCompletedAt": null,
+        "firstPassCompletedAt": null,
+        "readingHours": null,
+        "retestCompletedAt": null,
+        "secondPassCompletedAt": null
+      },
+      "reconciliationStatus": "document_mismatch",
+      "sourceIds": {
+        "csvCandidateId": "280002552484",
+        "csvElectionCode": "6257",
+        "restCandidateId": "280002552484",
+        "restElectionId": "20322002026"
+      },
+      "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+      "sqCandidate": "280002552484"
+    },
+    {
+      "ballotName": "EDMILSON COSTA",
+      "ballotNumber": 21,
+      "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+      "editorialStatus": "pending",
+      "electionYear": 2026,
+      "id": "280002551975",
+      "jurisdiction": "BR",
+      "observedDocumentCorpora": {
+        "restSha256s": [
+          "52f765533f93409a595d780e9ad8634de72db8f05794a2e70e808913c2ed4dff"
+        ],
+        "zipSha256s": [
+          "52f765533f93409a595d780e9ad8634de72db8f05794a2e70e808913c2ed4dff"
+        ]
+      },
+      "observedDocumentSha256s": [
+        "52f765533f93409a595d780e9ad8634de72db8f05794a2e70e808913c2ed4dff"
+      ],
+      "office": "presidente",
+      "officialStatus": {
+        "code": "-3",
+        "label": "Aguardando julgamento",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "reconciled"
+      },
+      "officialTotalizationStatus": {
+        "label": "Concorrendo",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "party": {
+        "acronym": "PCB",
+        "name": "PARTIDO COMUNISTA BRASILEIRO"
+      },
+      "planDocumentIds": [
+        "doc-280002551975-52f765533f93409a"
+      ],
+      "quality": {
+        "coldReviewCompletedAt": null,
+        "firstPassCompletedAt": null,
+        "readingHours": null,
+        "retestCompletedAt": null,
+        "secondPassCompletedAt": null
+      },
+      "reconciliationStatus": "reconciled",
+      "sourceIds": {
+        "csvCandidateId": "280002551975",
+        "csvElectionCode": "6257",
+        "restCandidateId": "280002551975",
+        "restElectionId": "20322002026"
+      },
+      "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+      "sqCandidate": "280002551975"
+    },
+    {
+      "ballotName": "ESCRITOR AUGUSTO CURY",
+      "ballotNumber": 70,
+      "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+      "editorialStatus": "pending",
+      "electionYear": 2026,
+      "id": "280002551547",
+      "jurisdiction": "BR",
+      "observedDocumentCorpora": {
+        "restSha256s": [
+          "49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605"
+        ],
+        "zipSha256s": [
+          "49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605"
+        ]
+      },
+      "observedDocumentSha256s": [
+        "49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605"
+      ],
+      "office": "presidente",
+      "officialStatus": {
+        "code": "-3",
+        "label": "Aguardando julgamento",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "reconciled"
+      },
+      "officialTotalizationStatus": {
+        "label": "Concorrendo",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "party": {
+        "acronym": "AVANTE",
+        "name": "AVANTE"
+      },
+      "planDocumentIds": [
+        "doc-280002551547-49430ae90d9a443d"
+      ],
+      "quality": {
+        "coldReviewCompletedAt": null,
+        "firstPassCompletedAt": null,
+        "readingHours": null,
+        "retestCompletedAt": null,
+        "secondPassCompletedAt": null
+      },
+      "reconciliationStatus": "reconciled",
+      "sourceIds": {
+        "csvCandidateId": "280002551547",
+        "csvElectionCode": "6257",
+        "restCandidateId": "280002551547",
+        "restElectionId": "20322002026"
+      },
+      "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+      "sqCandidate": "280002551547"
+    },
+    {
+      "ballotName": "FLAVIO BOLSONARO",
+      "ballotNumber": 22,
+      "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+      "editorialStatus": "pending",
+      "electionYear": 2026,
+      "id": "280002551544",
+      "jurisdiction": "BR",
+      "observedDocumentCorpora": {
+        "restSha256s": [
+          "7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4"
+        ],
+        "zipSha256s": [
+          "7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4"
+        ]
+      },
+      "observedDocumentSha256s": [
+        "7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4"
+      ],
+      "office": "presidente",
+      "officialStatus": {
+        "code": "-3",
+        "label": "Aguardando julgamento",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "reconciled"
+      },
+      "officialTotalizationStatus": {
+        "label": "Concorrendo",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "party": {
+        "acronym": "PL",
+        "name": "PARTIDO LIBERAL"
+      },
+      "planDocumentIds": [
+        "doc-280002551544-7d1d95075e11e3c4"
+      ],
+      "quality": {
+        "coldReviewCompletedAt": null,
+        "firstPassCompletedAt": null,
+        "readingHours": null,
+        "retestCompletedAt": null,
+        "secondPassCompletedAt": null
+      },
+      "reconciliationStatus": "reconciled",
+      "sourceIds": {
+        "csvCandidateId": "280002551544",
+        "csvElectionCode": "6257",
+        "restCandidateId": "280002551544",
+        "restElectionId": "20322002026"
+      },
+      "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+      "sqCandidate": "280002551544"
+    },
+    {
+      "ballotName": "HERTZ DIAS",
+      "ballotNumber": 16,
+      "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+      "editorialStatus": "pending",
+      "electionYear": 2026,
+      "id": "280002541457",
+      "jurisdiction": "BR",
+      "observedDocumentCorpora": {
+        "restSha256s": [
+          "1868565fb0d5de77d40a982a1be07dc7f44f7af7565ee3b40d93b31407d31468"
+        ],
+        "zipSha256s": [
+          "1868565fb0d5de77d40a982a1be07dc7f44f7af7565ee3b40d93b31407d31468"
+        ]
+      },
+      "observedDocumentSha256s": [
+        "1868565fb0d5de77d40a982a1be07dc7f44f7af7565ee3b40d93b31407d31468"
+      ],
+      "office": "presidente",
+      "officialStatus": {
+        "code": "-3",
+        "label": "Aguardando julgamento",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "reconciled"
+      },
+      "officialTotalizationStatus": {
+        "label": "Concorrendo",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "party": {
+        "acronym": "PSTU",
+        "name": "PARTIDO SOCIALISTA  DOS TRABALHADORES UNIFICADO"
+      },
+      "planDocumentIds": [
+        "doc-280002541457-1868565fb0d5de77"
+      ],
+      "quality": {
+        "coldReviewCompletedAt": null,
+        "firstPassCompletedAt": null,
+        "readingHours": null,
+        "retestCompletedAt": null,
+        "secondPassCompletedAt": null
+      },
+      "reconciliationStatus": "reconciled",
+      "sourceIds": {
+        "csvCandidateId": "280002541457",
+        "csvElectionCode": "6257",
+        "restCandidateId": "280002541457",
+        "restElectionId": "20322002026"
+      },
+      "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+      "sqCandidate": "280002541457"
+    },
+    {
+      "ballotName": "LULA",
+      "ballotNumber": 13,
+      "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+      "editorialStatus": "pending",
+      "electionYear": 2026,
+      "id": "280002542548",
+      "jurisdiction": "BR",
+      "observedDocumentCorpora": {
+        "restSha256s": [
+          "e1c162c20c81dafadf69b10bab230b5a6dc48f6b6c27c2cfce853b131a8bcc36"
+        ],
+        "zipSha256s": [
+          "e1c162c20c81dafadf69b10bab230b5a6dc48f6b6c27c2cfce853b131a8bcc36"
+        ]
+      },
+      "observedDocumentSha256s": [
+        "e1c162c20c81dafadf69b10bab230b5a6dc48f6b6c27c2cfce853b131a8bcc36"
+      ],
+      "office": "presidente",
+      "officialStatus": {
+        "code": "-3",
+        "label": "Aguardando julgamento",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "reconciled"
+      },
+      "officialTotalizationStatus": {
+        "label": "Concorrendo",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "party": {
+        "acronym": "PT",
+        "name": "PARTIDO DOS TRABALHADORES"
+      },
+      "planDocumentIds": [
+        "doc-280002542548-e1c162c20c81dafa"
+      ],
+      "quality": {
+        "coldReviewCompletedAt": null,
+        "firstPassCompletedAt": null,
+        "readingHours": null,
+        "retestCompletedAt": null,
+        "secondPassCompletedAt": null
+      },
+      "reconciliationStatus": "reconciled",
+      "sourceIds": {
+        "csvCandidateId": "280002542548",
+        "csvElectionCode": "6257",
+        "restCandidateId": "280002542548",
+        "restElectionId": "20322002026"
+      },
+      "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+      "sqCandidate": "280002542548"
+    },
+    {
+      "ballotName": "PABLO MARÇAL",
+      "ballotNumber": 28,
+      "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+      "editorialStatus": "awaiting_consolidation",
+      "electionYear": 2026,
+      "id": "280002553884",
+      "jurisdiction": "BR",
+      "observedDocumentCorpora": {
+        "restSha256s": [],
+        "zipSha256s": []
+      },
+      "observedDocumentSha256s": [],
+      "office": "presidente",
+      "officialStatus": {
+        "code": "REST",
+        "label": "Aguardando julgamento",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "officialTotalizationStatus": {
+        "label": "Concorrendo",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "party": {
+        "acronym": "PRTB",
+        "name": null
+      },
+      "planDocumentIds": [],
+      "quality": {
+        "coldReviewCompletedAt": null,
+        "firstPassCompletedAt": null,
+        "readingHours": null,
+        "retestCompletedAt": null,
+        "secondPassCompletedAt": null
+      },
+      "reconciliationStatus": "rest_only",
+      "sourceIds": {
+        "csvCandidateId": null,
+        "csvElectionCode": null,
+        "restCandidateId": "280002553884",
+        "restElectionId": "20322002026"
+      },
+      "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+      "sqCandidate": "280002553884"
+    },
+    {
+      "ballotName": "RENAN SANTOS",
+      "ballotNumber": 14,
+      "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+      "editorialStatus": "pending",
+      "electionYear": 2026,
+      "id": "280002540694",
+      "jurisdiction": "BR",
+      "observedDocumentCorpora": {
+        "restSha256s": [
+          "cdece60b71117c7820dbf90a7d795f76f3b1d1aaa5ebb8ce11f47e9ca6227b5a"
+        ],
+        "zipSha256s": [
+          "cdece60b71117c7820dbf90a7d795f76f3b1d1aaa5ebb8ce11f47e9ca6227b5a"
+        ]
+      },
+      "observedDocumentSha256s": [
+        "cdece60b71117c7820dbf90a7d795f76f3b1d1aaa5ebb8ce11f47e9ca6227b5a"
+      ],
+      "office": "presidente",
+      "officialStatus": {
+        "code": "-3",
+        "label": "Aguardando julgamento",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "reconciled"
+      },
+      "officialTotalizationStatus": {
+        "label": "Concorrendo",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "party": {
+        "acronym": "MISSÃO",
+        "name": "PARTIDO MISSÃO"
+      },
+      "planDocumentIds": [
+        "doc-280002540694-cdece60b71117c78"
+      ],
+      "quality": {
+        "coldReviewCompletedAt": null,
+        "firstPassCompletedAt": null,
+        "readingHours": null,
+        "retestCompletedAt": null,
+        "secondPassCompletedAt": null
+      },
+      "reconciliationStatus": "reconciled",
+      "sourceIds": {
+        "csvCandidateId": "280002540694",
+        "csvElectionCode": "6257",
+        "restCandidateId": "280002540694",
+        "restElectionId": "20322002026"
+      },
+      "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+      "sqCandidate": "280002540694"
+    },
+    {
+      "ballotName": "RONALDO CAIADO",
+      "ballotNumber": 55,
+      "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+      "editorialStatus": "pending",
+      "electionYear": 2026,
+      "id": "280002551932",
+      "jurisdiction": "BR",
+      "observedDocumentCorpora": {
+        "restSha256s": [
+          "b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415"
+        ],
+        "zipSha256s": [
+          "b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415"
+        ]
+      },
+      "observedDocumentSha256s": [
+        "b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415"
+      ],
+      "office": "presidente",
+      "officialStatus": {
+        "code": "-3",
+        "label": "Aguardando julgamento",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "reconciled"
+      },
+      "officialTotalizationStatus": {
+        "label": "Concorrendo",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "party": {
+        "acronym": "PSD",
+        "name": "PARTIDO SOCIAL DEMOCRÁTICO"
+      },
+      "planDocumentIds": [
+        "doc-280002551932-b0ba46eb58d1827c"
+      ],
+      "quality": {
+        "coldReviewCompletedAt": null,
+        "firstPassCompletedAt": null,
+        "readingHours": null,
+        "retestCompletedAt": null,
+        "secondPassCompletedAt": null
+      },
+      "reconciliationStatus": "reconciled",
+      "sourceIds": {
+        "csvCandidateId": "280002551932",
+        "csvElectionCode": "6257",
+        "restCandidateId": "280002551932",
+        "restElectionId": "20322002026"
+      },
+      "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+      "sqCandidate": "280002551932"
+    },
+    {
+      "ballotName": "RUI COSTA PIMENTA",
+      "ballotNumber": 29,
+      "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+      "editorialStatus": "awaiting_consolidation",
+      "electionYear": 2026,
+      "id": "280002552487",
+      "jurisdiction": "BR",
+      "observedDocumentCorpora": {
+        "restSha256s": [
+          "ed380b23d6e033e8616ce71efcf66eb42d2baee2b58f1c9ae80690009c20dfe9"
+        ],
+        "zipSha256s": []
+      },
+      "observedDocumentSha256s": [
+        "ed380b23d6e033e8616ce71efcf66eb42d2baee2b58f1c9ae80690009c20dfe9"
+      ],
+      "office": "presidente",
+      "officialStatus": {
+        "code": "-3",
+        "label": "Aguardando julgamento",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "reconciled"
+      },
+      "officialTotalizationStatus": {
+        "label": "Concorrendo",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "party": {
+        "acronym": "PCO",
+        "name": "PARTIDO DA CAUSA OPERÁRIA"
+      },
+      "planDocumentIds": [
+        "doc-280002552487-ed380b23d6e033e8"
+      ],
+      "quality": {
+        "coldReviewCompletedAt": null,
+        "firstPassCompletedAt": null,
+        "readingHours": null,
+        "retestCompletedAt": null,
+        "secondPassCompletedAt": null
+      },
+      "reconciliationStatus": "document_mismatch",
+      "sourceIds": {
+        "csvCandidateId": "280002552487",
+        "csvElectionCode": "6257",
+        "restCandidateId": "280002552487",
+        "restElectionId": "20322002026"
+      },
+      "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+      "sqCandidate": "280002552487"
+    },
+    {
+      "ballotName": "SAMARA",
+      "ballotNumber": 80,
+      "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+      "editorialStatus": "source_changed",
+      "electionYear": 2026,
+      "id": "280002538811",
+      "jurisdiction": "BR",
+      "observedDocumentCorpora": {
+        "restSha256s": [
+          "23c510d5b06bb149bb9390bbc144dcda9cfd2b6a677a854b3d993b16ed7a94e6",
+          "2caad1effa29c6a8d602b89f4f1accf086eca3fc793e03c085d58f265a5d3049"
+        ],
+        "zipSha256s": [
+          "2caad1effa29c6a8d602b89f4f1accf086eca3fc793e03c085d58f265a5d3049"
+        ]
+      },
+      "observedDocumentSha256s": [
+        "23c510d5b06bb149bb9390bbc144dcda9cfd2b6a677a854b3d993b16ed7a94e6",
+        "2caad1effa29c6a8d602b89f4f1accf086eca3fc793e03c085d58f265a5d3049"
+      ],
+      "office": "presidente",
+      "officialStatus": {
+        "code": "-3",
+        "label": "Aguardando julgamento",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "reconciled"
+      },
+      "officialTotalizationStatus": {
+        "label": "Concorrendo",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "party": {
+        "acronym": "UP",
+        "name": "UNIDADE POPULAR"
+      },
+      "planDocumentIds": [
+        "doc-280002538811-23c510d5b06bb149",
+        "doc-280002538811-2caad1effa29c6a8"
+      ],
+      "quality": {
+        "coldReviewCompletedAt": null,
+        "firstPassCompletedAt": null,
+        "readingHours": null,
+        "retestCompletedAt": null,
+        "secondPassCompletedAt": null
+      },
+      "reconciliationStatus": "document_mismatch",
+      "sourceIds": {
+        "csvCandidateId": "280002538811",
+        "csvElectionCode": "6257",
+        "restCandidateId": "280002538811",
+        "restElectionId": "20322002026"
+      },
+      "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+      "sqCandidate": "280002538811"
+    },
+    {
+      "ballotName": "VETERINÁRIO WILSON GRASSI",
+      "ballotNumber": 35,
+      "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+      "editorialStatus": "pending",
+      "electionYear": 2026,
+      "id": "280002548139",
+      "jurisdiction": "BR",
+      "observedDocumentCorpora": {
+        "restSha256s": [
+          "df2acdb7a6d8b080d6d8a235b8fe8f0d987bf0f24be4f4aa9abc80e4ebb24904"
+        ],
+        "zipSha256s": [
+          "df2acdb7a6d8b080d6d8a235b8fe8f0d987bf0f24be4f4aa9abc80e4ebb24904"
+        ]
+      },
+      "observedDocumentSha256s": [
+        "df2acdb7a6d8b080d6d8a235b8fe8f0d987bf0f24be4f4aa9abc80e4ebb24904"
+      ],
+      "office": "presidente",
+      "officialStatus": {
+        "code": "-3",
+        "label": "Aguardando julgamento",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "reconciled"
+      },
+      "officialTotalizationStatus": {
+        "label": "Concorrendo",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "party": {
+        "acronym": "DEMOCRATA",
+        "name": "DEMOCRATA"
+      },
+      "planDocumentIds": [
+        "doc-280002548139-df2acdb7a6d8b080"
+      ],
+      "quality": {
+        "coldReviewCompletedAt": null,
+        "firstPassCompletedAt": null,
+        "readingHours": null,
+        "retestCompletedAt": null,
+        "secondPassCompletedAt": null
+      },
+      "reconciliationStatus": "reconciled",
+      "sourceIds": {
+        "csvCandidateId": "280002548139",
+        "csvElectionCode": "6257",
+        "restCandidateId": "280002548139",
+        "restElectionId": "20322002026"
+      },
+      "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+      "sqCandidate": "280002548139"
+    },
+    {
+      "ballotName": "ZEMA",
+      "ballotNumber": 30,
+      "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+      "editorialStatus": "pending",
+      "electionYear": 2026,
+      "id": "280002539826",
+      "jurisdiction": "BR",
+      "observedDocumentCorpora": {
+        "restSha256s": [
+          "5a5804622017a8e9c123fb64540a5ee3d06009de681026b505bc2a152d5e646e"
+        ],
+        "zipSha256s": [
+          "5a5804622017a8e9c123fb64540a5ee3d06009de681026b505bc2a152d5e646e"
+        ]
+      },
+      "observedDocumentSha256s": [
+        "5a5804622017a8e9c123fb64540a5ee3d06009de681026b505bc2a152d5e646e"
+      ],
+      "office": "presidente",
+      "officialStatus": {
+        "code": "-3",
+        "label": "Aguardando julgamento",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "reconciled"
+      },
+      "officialTotalizationStatus": {
+        "label": "Concorrendo",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "source": "divulgacand-rest"
+      },
+      "party": {
+        "acronym": "NOVO",
+        "name": "PARTIDO NOVO"
+      },
+      "planDocumentIds": [
+        "doc-280002539826-5a5804622017a8e9"
+      ],
+      "quality": {
+        "coldReviewCompletedAt": null,
+        "firstPassCompletedAt": null,
+        "readingHours": null,
+        "retestCompletedAt": null,
+        "secondPassCompletedAt": null
+      },
+      "reconciliationStatus": "reconciled",
+      "sourceIds": {
+        "csvCandidateId": "280002539826",
+        "csvElectionCode": "6257",
+        "restCandidateId": "280002539826",
+        "restElectionId": "20322002026"
+      },
+      "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+      "sqCandidate": "280002539826"
+    }
+  ],
+  "codingDecisions": [],
+  "documents": [
+    {
+      "byteSize": 64568,
+      "candidacyId": "280002552484",
+      "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113380",
+      "capturedAt": "2026-08-15T19:35:53.000Z",
+      "id": "doc-280002552484-6390152c66285558",
+      "mimeType": "application/pdf",
+      "officialFilename": "PLANO DE GOVERNO.pdf",
+      "pageCount": null,
+      "pageCountVerified": false,
+      "preservationStatus": "pending_upload",
+      "preservedObjectKey": "pdf/6390152c66285558ecd5459f4f73f3f65650beb77022b14e7750190b1b536d68.pdf",
+      "preservedPublicUrl": null,
+      "sha256": "6390152c66285558ecd5459f4f73f3f65650beb77022b14e7750190b1b536d68",
+      "sources": [
+        {
+          "archiveEntry": null,
+          "documentId": "280017113380",
+          "kind": "divulgacand_rest",
+          "observedAt": "2026-08-15T19:35:53.000Z",
+          "resourceId": null,
+          "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113380"
+        }
+      ],
+      "supersedesDocumentId": null
+    },
+    {
+      "byteSize": 314957,
+      "candidacyId": "280002551975",
+      "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017107286",
+      "capturedAt": "2026-08-15T19:35:53.000Z",
+      "id": "doc-280002551975-52f765533f93409a",
+      "mimeType": "application/pdf",
+      "officialFilename": "Programa Politico do PCB eleicoes 20261.pdf",
+      "pageCount": null,
+      "pageCountVerified": false,
+      "preservationStatus": "pending_upload",
+      "preservedObjectKey": "pdf/52f765533f93409a595d780e9ad8634de72db8f05794a2e70e808913c2ed4dff.pdf",
+      "preservedPublicUrl": null,
+      "sha256": "52f765533f93409a595d780e9ad8634de72db8f05794a2e70e808913c2ed4dff",
+      "sources": [
+        {
+          "archiveEntry": "BR/2026BR280002551975_01.pdf",
+          "documentId": null,
+          "kind": "ckan_zip",
+          "observedAt": "2026-08-15T06:47:19.000Z",
+          "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+          "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+        },
+        {
+          "archiveEntry": null,
+          "documentId": "280017107286",
+          "kind": "divulgacand_rest",
+          "observedAt": "2026-08-15T19:35:53.000Z",
+          "resourceId": null,
+          "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017107286"
+        }
+      ],
+      "supersedesDocumentId": null
+    },
+    {
+      "byteSize": 1953868,
+      "candidacyId": "280002551547",
+      "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104778",
+      "capturedAt": "2026-08-15T19:35:53.000Z",
+      "id": "doc-280002551547-49430ae90d9a443d",
+      "mimeType": "application/pdf",
+      "officialFilename": "PLANO DE GOVERNOO BRASIL DOS NOSSOS SONHOS.pdf",
+      "pageCount": 200,
+      "pageCountVerified": false,
+      "preservationStatus": "pending_upload",
+      "preservedObjectKey": "pdf/49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605.pdf",
+      "preservedPublicUrl": null,
+      "sha256": "49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605",
+      "sources": [
+        {
+          "archiveEntry": "BR/2026BR280002551547_01.pdf",
+          "documentId": null,
+          "kind": "ckan_zip",
+          "observedAt": "2026-08-15T06:47:19.000Z",
+          "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+          "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+        },
+        {
+          "archiveEntry": null,
+          "documentId": "280017104778",
+          "kind": "divulgacand_rest",
+          "observedAt": "2026-08-15T19:35:53.000Z",
+          "resourceId": null,
+          "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104778"
+        }
+      ],
+      "supersedesDocumentId": null
+    },
+    {
+      "byteSize": 1940855,
+      "candidacyId": "280002551544",
+      "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104726",
+      "capturedAt": "2026-08-15T19:35:53.000Z",
+      "id": "doc-280002551544-7d1d95075e11e3c4",
+      "mimeType": "application/pdf",
+      "officialFilename": "DiretrizesPlanodeGovernoFlavioBolsonaro20272030versaofinal.pdf",
+      "pageCount": null,
+      "pageCountVerified": false,
+      "preservationStatus": "pending_upload",
+      "preservedObjectKey": "pdf/7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4.pdf",
+      "preservedPublicUrl": null,
+      "sha256": "7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4",
+      "sources": [
+        {
+          "archiveEntry": "BR/2026BR280002551544_01.pdf",
+          "documentId": null,
+          "kind": "ckan_zip",
+          "observedAt": "2026-08-15T06:47:19.000Z",
+          "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+          "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+        },
+        {
+          "archiveEntry": null,
+          "documentId": "280017104726",
+          "kind": "divulgacand_rest",
+          "observedAt": "2026-08-15T19:35:53.000Z",
+          "resourceId": null,
+          "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104726"
+        }
+      ],
+      "supersedesDocumentId": null
+    },
+    {
+      "byteSize": 738999,
+      "candidacyId": "280002541457",
+      "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998007",
+      "capturedAt": "2026-08-15T19:35:53.000Z",
+      "id": "doc-280002541457-1868565fb0d5de77",
+      "mimeType": "application/pdf",
+      "officialFilename": "Programa PSTU EleiAAes 2026.pdf",
+      "pageCount": 8,
+      "pageCountVerified": false,
+      "preservationStatus": "pending_upload",
+      "preservedObjectKey": "pdf/1868565fb0d5de77d40a982a1be07dc7f44f7af7565ee3b40d93b31407d31468.pdf",
+      "preservedPublicUrl": null,
+      "sha256": "1868565fb0d5de77d40a982a1be07dc7f44f7af7565ee3b40d93b31407d31468",
+      "sources": [
+        {
+          "archiveEntry": "BR/2026BR280002541457_01.pdf",
+          "documentId": null,
+          "kind": "ckan_zip",
+          "observedAt": "2026-08-15T06:47:19.000Z",
+          "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+          "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+        },
+        {
+          "archiveEntry": null,
+          "documentId": "280016998007",
+          "kind": "divulgacand_rest",
+          "observedAt": "2026-08-15T19:35:53.000Z",
+          "resourceId": null,
+          "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998007"
+        }
+      ],
+      "supersedesDocumentId": null
+    },
+    {
+      "byteSize": 1189907,
+      "candidacyId": "280002542548",
+      "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017016005",
+      "capturedAt": "2026-08-15T19:35:53.000Z",
+      "id": "doc-280002542548-e1c162c20c81dafa",
+      "mimeType": "application/pdf",
+      "officialFilename": "0806JOB838PTlivroplanodegovernocompressed.pdf",
+      "pageCount": 84,
+      "pageCountVerified": false,
+      "preservationStatus": "pending_upload",
+      "preservedObjectKey": "pdf/e1c162c20c81dafadf69b10bab230b5a6dc48f6b6c27c2cfce853b131a8bcc36.pdf",
+      "preservedPublicUrl": null,
+      "sha256": "e1c162c20c81dafadf69b10bab230b5a6dc48f6b6c27c2cfce853b131a8bcc36",
+      "sources": [
+        {
+          "archiveEntry": "BR/2026BR280002542548_01.pdf",
+          "documentId": null,
+          "kind": "ckan_zip",
+          "observedAt": "2026-08-15T06:47:19.000Z",
+          "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+          "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+        },
+        {
+          "archiveEntry": null,
+          "documentId": "280017016005",
+          "kind": "divulgacand_rest",
+          "observedAt": "2026-08-15T19:35:53.000Z",
+          "resourceId": null,
+          "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017016005"
+        }
+      ],
+      "supersedesDocumentId": null
+    },
+    {
+      "byteSize": 1691345,
+      "candidacyId": "280002540694",
+      "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789",
+      "capturedAt": "2026-08-15T19:35:53.000Z",
+      "id": "doc-280002540694-cdece60b71117c78",
+      "mimeType": "application/pdf",
+      "officialFilename": "Plano de Governo Missao 2026  Finalcompressed.pdf",
+      "pageCount": 51,
+      "pageCountVerified": false,
+      "preservationStatus": "pending_upload",
+      "preservedObjectKey": "pdf/cdece60b71117c7820dbf90a7d795f76f3b1d1aaa5ebb8ce11f47e9ca6227b5a.pdf",
+      "preservedPublicUrl": null,
+      "sha256": "cdece60b71117c7820dbf90a7d795f76f3b1d1aaa5ebb8ce11f47e9ca6227b5a",
+      "sources": [
+        {
+          "archiveEntry": "BR/2026BR280002540694_01.pdf",
+          "documentId": null,
+          "kind": "ckan_zip",
+          "observedAt": "2026-08-15T06:47:19.000Z",
+          "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+          "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+        },
+        {
+          "archiveEntry": null,
+          "documentId": "280017002789",
+          "kind": "divulgacand_rest",
+          "observedAt": "2026-08-15T19:35:53.000Z",
+          "resourceId": null,
+          "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789"
+        }
+      ],
+      "supersedesDocumentId": null
+    },
+    {
+      "byteSize": 1000707,
+      "candidacyId": "280002551932",
+      "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+      "capturedAt": "2026-08-15T19:35:53.000Z",
+      "id": "doc-280002551932-b0ba46eb58d1827c",
+      "mimeType": "application/pdf",
+      "officialFilename": "Plano de Governo Ronaldo Caiado Presidente.pdf",
+      "pageCount": 100,
+      "pageCountVerified": false,
+      "preservationStatus": "pending_upload",
+      "preservedObjectKey": "pdf/b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415.pdf",
+      "preservedPublicUrl": null,
+      "sha256": "b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415",
+      "sources": [
+        {
+          "archiveEntry": "BR/2026BR280002551932_01.pdf",
+          "documentId": null,
+          "kind": "ckan_zip",
+          "observedAt": "2026-08-15T06:47:19.000Z",
+          "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+          "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+        },
+        {
+          "archiveEntry": null,
+          "documentId": "280017106566",
+          "kind": "divulgacand_rest",
+          "observedAt": "2026-08-15T19:35:53.000Z",
+          "resourceId": null,
+          "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566"
+        }
+      ],
+      "supersedesDocumentId": null
+    },
+    {
+      "byteSize": 96070,
+      "candidacyId": "280002552487",
+      "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113417",
+      "capturedAt": "2026-08-15T19:35:53.000Z",
+      "id": "doc-280002552487-ed380b23d6e033e8",
+      "mimeType": "application/pdf",
+      "officialFilename": "PCOprogramadegoverno2026.pdf",
+      "pageCount": 7,
+      "pageCountVerified": false,
+      "preservationStatus": "pending_upload",
+      "preservedObjectKey": "pdf/ed380b23d6e033e8616ce71efcf66eb42d2baee2b58f1c9ae80690009c20dfe9.pdf",
+      "preservedPublicUrl": null,
+      "sha256": "ed380b23d6e033e8616ce71efcf66eb42d2baee2b58f1c9ae80690009c20dfe9",
+      "sources": [
+        {
+          "archiveEntry": null,
+          "documentId": "280017113417",
+          "kind": "divulgacand_rest",
+          "observedAt": "2026-08-15T19:35:53.000Z",
+          "resourceId": null,
+          "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113417"
+        }
+      ],
+      "supersedesDocumentId": null
+    },
+    {
+      "byteSize": 1431032,
+      "candidacyId": "280002538811",
+      "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017119534",
+      "capturedAt": "2026-08-15T19:35:53.000Z",
+      "id": "doc-280002538811-23c510d5b06bb149",
+      "mimeType": "application/pdf",
+      "officialFilename": "pje-ProgramaSAMARA_02 (1).pdf",
+      "pageCount": 42,
+      "pageCountVerified": false,
+      "preservationStatus": "pending_upload",
+      "preservedObjectKey": "pdf/23c510d5b06bb149bb9390bbc144dcda9cfd2b6a677a854b3d993b16ed7a94e6.pdf",
+      "preservedPublicUrl": null,
+      "sha256": "23c510d5b06bb149bb9390bbc144dcda9cfd2b6a677a854b3d993b16ed7a94e6",
+      "sources": [
+        {
+          "archiveEntry": null,
+          "documentId": "280017119534",
+          "kind": "divulgacand_rest",
+          "observedAt": "2026-08-15T19:35:53.000Z",
+          "resourceId": null,
+          "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017119534"
+        }
+      ],
+      "supersedesDocumentId": null
+    },
+    {
+      "byteSize": 102070,
+      "candidacyId": "280002538811",
+      "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998025",
+      "capturedAt": "2026-08-15T19:35:53.000Z",
+      "id": "doc-280002538811-2caad1effa29c6a8",
+      "mimeType": "application/pdf",
+      "officialFilename": "pje-PROGRAMA SAMARA MARTINS AGOSTO 2026.pdf",
+      "pageCount": null,
+      "pageCountVerified": false,
+      "preservationStatus": "pending_upload",
+      "preservedObjectKey": "pdf/2caad1effa29c6a8d602b89f4f1accf086eca3fc793e03c085d58f265a5d3049.pdf",
+      "preservedPublicUrl": null,
+      "sha256": "2caad1effa29c6a8d602b89f4f1accf086eca3fc793e03c085d58f265a5d3049",
+      "sources": [
+        {
+          "archiveEntry": "BR/2026BR280002538811_01.pdf",
+          "documentId": null,
+          "kind": "ckan_zip",
+          "observedAt": "2026-08-15T06:47:19.000Z",
+          "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+          "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+        },
+        {
+          "archiveEntry": null,
+          "documentId": "280016998025",
+          "kind": "divulgacand_rest",
+          "observedAt": "2026-08-15T19:35:53.000Z",
+          "resourceId": null,
+          "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998025"
+        }
+      ],
+      "supersedesDocumentId": null
+    },
+    {
+      "byteSize": 1612696,
+      "candidacyId": "280002548139",
+      "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017075366",
+      "capturedAt": "2026-08-15T19:35:53.000Z",
+      "id": "doc-280002548139-df2acdb7a6d8b080",
+      "mimeType": "application/pdf",
+      "officialFilename": "Brasil em Primeiro Lugar.pdf",
+      "pageCount": 58,
+      "pageCountVerified": false,
+      "preservationStatus": "pending_upload",
+      "preservedObjectKey": "pdf/df2acdb7a6d8b080d6d8a235b8fe8f0d987bf0f24be4f4aa9abc80e4ebb24904.pdf",
+      "preservedPublicUrl": null,
+      "sha256": "df2acdb7a6d8b080d6d8a235b8fe8f0d987bf0f24be4f4aa9abc80e4ebb24904",
+      "sources": [
+        {
+          "archiveEntry": "BR/2026BR280002548139_01.pdf",
+          "documentId": null,
+          "kind": "ckan_zip",
+          "observedAt": "2026-08-15T06:47:19.000Z",
+          "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+          "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+        },
+        {
+          "archiveEntry": null,
+          "documentId": "280017075366",
+          "kind": "divulgacand_rest",
+          "observedAt": "2026-08-15T19:35:53.000Z",
+          "resourceId": null,
+          "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017075366"
+        }
+      ],
+      "supersedesDocumentId": null
+    },
+    {
+      "byteSize": 882639,
+      "candidacyId": "280002539826",
+      "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
+      "capturedAt": "2026-08-15T19:35:53.000Z",
+      "id": "doc-280002539826-5a5804622017a8e9",
+      "mimeType": "application/pdf",
+      "officialFilename": "planogoverno10120.pdf",
+      "pageCount": 31,
+      "pageCountVerified": false,
+      "preservationStatus": "pending_upload",
+      "preservedObjectKey": "pdf/5a5804622017a8e9c123fb64540a5ee3d06009de681026b505bc2a152d5e646e.pdf",
+      "preservedPublicUrl": null,
+      "sha256": "5a5804622017a8e9c123fb64540a5ee3d06009de681026b505bc2a152d5e646e",
+      "sources": [
+        {
+          "archiveEntry": "BR/2026BR280002539826_01.pdf",
+          "documentId": null,
+          "kind": "ckan_zip",
+          "observedAt": "2026-08-15T06:47:19.000Z",
+          "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+          "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+        },
+        {
+          "archiveEntry": null,
+          "documentId": "280016919931",
+          "kind": "divulgacand_rest",
+          "observedAt": "2026-08-15T19:35:53.000Z",
+          "resourceId": null,
+          "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931"
+        }
+      ],
+      "supersedesDocumentId": null
+    }
+  ],
+  "findings": [
+    {
+      "candidacyId": "280002552484",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "economia-impostos"
+    },
+    {
+      "candidacyId": "280002552484",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "emprego-renda"
+    },
+    {
+      "candidacyId": "280002552484",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "saude"
+    },
+    {
+      "candidacyId": "280002552484",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "educacao"
+    },
+    {
+      "candidacyId": "280002552484",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "seguranca-justica"
+    },
+    {
+      "candidacyId": "280002552484",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "programas-sociais-habitacao"
+    },
+    {
+      "candidacyId": "280002552484",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "meio-ambiente-clima"
+    },
+    {
+      "candidacyId": "280002552484",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "infraestrutura-energia"
+    },
+    {
+      "candidacyId": "280002552484",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "agricultura-agronegocio"
+    },
+    {
+      "candidacyId": "280002552484",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "estado-instituicoes"
+    },
+    {
+      "candidacyId": "280002552484",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "tecnologia-ciencia-inovacao"
+    },
+    {
+      "candidacyId": "280002552484",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "politica-externa-defesa"
+    },
+    {
+      "candidacyId": "280002552484",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "outros-temas"
+    },
+    {
+      "candidacyId": "280002551975",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "economia-impostos"
+    },
+    {
+      "candidacyId": "280002551975",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "emprego-renda"
+    },
+    {
+      "candidacyId": "280002551975",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "saude"
+    },
+    {
+      "candidacyId": "280002551975",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "educacao"
+    },
+    {
+      "candidacyId": "280002551975",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "seguranca-justica"
+    },
+    {
+      "candidacyId": "280002551975",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "programas-sociais-habitacao"
+    },
+    {
+      "candidacyId": "280002551975",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "meio-ambiente-clima"
+    },
+    {
+      "candidacyId": "280002551975",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "infraestrutura-energia"
+    },
+    {
+      "candidacyId": "280002551975",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "agricultura-agronegocio"
+    },
+    {
+      "candidacyId": "280002551975",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "estado-instituicoes"
+    },
+    {
+      "candidacyId": "280002551975",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "tecnologia-ciencia-inovacao"
+    },
+    {
+      "candidacyId": "280002551975",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "politica-externa-defesa"
+    },
+    {
+      "candidacyId": "280002551975",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "outros-temas"
+    },
+    {
+      "candidacyId": "280002551547",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "economia-impostos"
+    },
+    {
+      "candidacyId": "280002551547",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "emprego-renda"
+    },
+    {
+      "candidacyId": "280002551547",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "saude"
+    },
+    {
+      "candidacyId": "280002551547",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "educacao"
+    },
+    {
+      "candidacyId": "280002551547",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "seguranca-justica"
+    },
+    {
+      "candidacyId": "280002551547",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "programas-sociais-habitacao"
+    },
+    {
+      "candidacyId": "280002551547",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "meio-ambiente-clima"
+    },
+    {
+      "candidacyId": "280002551547",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "infraestrutura-energia"
+    },
+    {
+      "candidacyId": "280002551547",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "agricultura-agronegocio"
+    },
+    {
+      "candidacyId": "280002551547",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "estado-instituicoes"
+    },
+    {
+      "candidacyId": "280002551547",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "tecnologia-ciencia-inovacao"
+    },
+    {
+      "candidacyId": "280002551547",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "politica-externa-defesa"
+    },
+    {
+      "candidacyId": "280002551547",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "outros-temas"
+    },
+    {
+      "candidacyId": "280002551544",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "economia-impostos"
+    },
+    {
+      "candidacyId": "280002551544",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "emprego-renda"
+    },
+    {
+      "candidacyId": "280002551544",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "saude"
+    },
+    {
+      "candidacyId": "280002551544",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "educacao"
+    },
+    {
+      "candidacyId": "280002551544",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "seguranca-justica"
+    },
+    {
+      "candidacyId": "280002551544",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "programas-sociais-habitacao"
+    },
+    {
+      "candidacyId": "280002551544",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "meio-ambiente-clima"
+    },
+    {
+      "candidacyId": "280002551544",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "infraestrutura-energia"
+    },
+    {
+      "candidacyId": "280002551544",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "agricultura-agronegocio"
+    },
+    {
+      "candidacyId": "280002551544",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "estado-instituicoes"
+    },
+    {
+      "candidacyId": "280002551544",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "tecnologia-ciencia-inovacao"
+    },
+    {
+      "candidacyId": "280002551544",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "politica-externa-defesa"
+    },
+    {
+      "candidacyId": "280002551544",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "outros-temas"
+    },
+    {
+      "candidacyId": "280002541457",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "economia-impostos"
+    },
+    {
+      "candidacyId": "280002541457",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "emprego-renda"
+    },
+    {
+      "candidacyId": "280002541457",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "saude"
+    },
+    {
+      "candidacyId": "280002541457",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "educacao"
+    },
+    {
+      "candidacyId": "280002541457",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "seguranca-justica"
+    },
+    {
+      "candidacyId": "280002541457",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "programas-sociais-habitacao"
+    },
+    {
+      "candidacyId": "280002541457",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "meio-ambiente-clima"
+    },
+    {
+      "candidacyId": "280002541457",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "infraestrutura-energia"
+    },
+    {
+      "candidacyId": "280002541457",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "agricultura-agronegocio"
+    },
+    {
+      "candidacyId": "280002541457",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "estado-instituicoes"
+    },
+    {
+      "candidacyId": "280002541457",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "tecnologia-ciencia-inovacao"
+    },
+    {
+      "candidacyId": "280002541457",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "politica-externa-defesa"
+    },
+    {
+      "candidacyId": "280002541457",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "outros-temas"
+    },
+    {
+      "candidacyId": "280002542548",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "economia-impostos"
+    },
+    {
+      "candidacyId": "280002542548",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "emprego-renda"
+    },
+    {
+      "candidacyId": "280002542548",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "saude"
+    },
+    {
+      "candidacyId": "280002542548",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "educacao"
+    },
+    {
+      "candidacyId": "280002542548",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "seguranca-justica"
+    },
+    {
+      "candidacyId": "280002542548",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "programas-sociais-habitacao"
+    },
+    {
+      "candidacyId": "280002542548",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "meio-ambiente-clima"
+    },
+    {
+      "candidacyId": "280002542548",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "infraestrutura-energia"
+    },
+    {
+      "candidacyId": "280002542548",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "agricultura-agronegocio"
+    },
+    {
+      "candidacyId": "280002542548",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "estado-instituicoes"
+    },
+    {
+      "candidacyId": "280002542548",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "tecnologia-ciencia-inovacao"
+    },
+    {
+      "candidacyId": "280002542548",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "politica-externa-defesa"
+    },
+    {
+      "candidacyId": "280002542548",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "outros-temas"
+    },
+    {
+      "candidacyId": "280002553884",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "economia-impostos"
+    },
+    {
+      "candidacyId": "280002553884",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "emprego-renda"
+    },
+    {
+      "candidacyId": "280002553884",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "saude"
+    },
+    {
+      "candidacyId": "280002553884",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "educacao"
+    },
+    {
+      "candidacyId": "280002553884",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "seguranca-justica"
+    },
+    {
+      "candidacyId": "280002553884",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "programas-sociais-habitacao"
+    },
+    {
+      "candidacyId": "280002553884",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "meio-ambiente-clima"
+    },
+    {
+      "candidacyId": "280002553884",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "infraestrutura-energia"
+    },
+    {
+      "candidacyId": "280002553884",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "agricultura-agronegocio"
+    },
+    {
+      "candidacyId": "280002553884",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "estado-instituicoes"
+    },
+    {
+      "candidacyId": "280002553884",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "tecnologia-ciencia-inovacao"
+    },
+    {
+      "candidacyId": "280002553884",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "politica-externa-defesa"
+    },
+    {
+      "candidacyId": "280002553884",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "outros-temas"
+    },
+    {
+      "candidacyId": "280002540694",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "economia-impostos"
+    },
+    {
+      "candidacyId": "280002540694",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "emprego-renda"
+    },
+    {
+      "candidacyId": "280002540694",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "saude"
+    },
+    {
+      "candidacyId": "280002540694",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "educacao"
+    },
+    {
+      "candidacyId": "280002540694",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "seguranca-justica"
+    },
+    {
+      "candidacyId": "280002540694",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "programas-sociais-habitacao"
+    },
+    {
+      "candidacyId": "280002540694",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "meio-ambiente-clima"
+    },
+    {
+      "candidacyId": "280002540694",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "infraestrutura-energia"
+    },
+    {
+      "candidacyId": "280002540694",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "agricultura-agronegocio"
+    },
+    {
+      "candidacyId": "280002540694",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "estado-instituicoes"
+    },
+    {
+      "candidacyId": "280002540694",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "tecnologia-ciencia-inovacao"
+    },
+    {
+      "candidacyId": "280002540694",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "politica-externa-defesa"
+    },
+    {
+      "candidacyId": "280002540694",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "outros-temas"
+    },
+    {
+      "candidacyId": "280002551932",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "economia-impostos"
+    },
+    {
+      "candidacyId": "280002551932",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "emprego-renda"
+    },
+    {
+      "candidacyId": "280002551932",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "saude"
+    },
+    {
+      "candidacyId": "280002551932",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "educacao"
+    },
+    {
+      "candidacyId": "280002551932",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "seguranca-justica"
+    },
+    {
+      "candidacyId": "280002551932",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "programas-sociais-habitacao"
+    },
+    {
+      "candidacyId": "280002551932",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "meio-ambiente-clima"
+    },
+    {
+      "candidacyId": "280002551932",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "infraestrutura-energia"
+    },
+    {
+      "candidacyId": "280002551932",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "agricultura-agronegocio"
+    },
+    {
+      "candidacyId": "280002551932",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "estado-instituicoes"
+    },
+    {
+      "candidacyId": "280002551932",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "tecnologia-ciencia-inovacao"
+    },
+    {
+      "candidacyId": "280002551932",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "politica-externa-defesa"
+    },
+    {
+      "candidacyId": "280002551932",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "outros-temas"
+    },
+    {
+      "candidacyId": "280002552487",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "economia-impostos"
+    },
+    {
+      "candidacyId": "280002552487",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "emprego-renda"
+    },
+    {
+      "candidacyId": "280002552487",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "saude"
+    },
+    {
+      "candidacyId": "280002552487",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "educacao"
+    },
+    {
+      "candidacyId": "280002552487",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "seguranca-justica"
+    },
+    {
+      "candidacyId": "280002552487",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "programas-sociais-habitacao"
+    },
+    {
+      "candidacyId": "280002552487",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "meio-ambiente-clima"
+    },
+    {
+      "candidacyId": "280002552487",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "infraestrutura-energia"
+    },
+    {
+      "candidacyId": "280002552487",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "agricultura-agronegocio"
+    },
+    {
+      "candidacyId": "280002552487",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "estado-instituicoes"
+    },
+    {
+      "candidacyId": "280002552487",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "tecnologia-ciencia-inovacao"
+    },
+    {
+      "candidacyId": "280002552487",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "politica-externa-defesa"
+    },
+    {
+      "candidacyId": "280002552487",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "outros-temas"
+    },
+    {
+      "candidacyId": "280002538811",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "economia-impostos"
+    },
+    {
+      "candidacyId": "280002538811",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "emprego-renda"
+    },
+    {
+      "candidacyId": "280002538811",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "saude"
+    },
+    {
+      "candidacyId": "280002538811",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "educacao"
+    },
+    {
+      "candidacyId": "280002538811",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "seguranca-justica"
+    },
+    {
+      "candidacyId": "280002538811",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "programas-sociais-habitacao"
+    },
+    {
+      "candidacyId": "280002538811",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "meio-ambiente-clima"
+    },
+    {
+      "candidacyId": "280002538811",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "infraestrutura-energia"
+    },
+    {
+      "candidacyId": "280002538811",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "agricultura-agronegocio"
+    },
+    {
+      "candidacyId": "280002538811",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "estado-instituicoes"
+    },
+    {
+      "candidacyId": "280002538811",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "tecnologia-ciencia-inovacao"
+    },
+    {
+      "candidacyId": "280002538811",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "politica-externa-defesa"
+    },
+    {
+      "candidacyId": "280002538811",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "outros-temas"
+    },
+    {
+      "candidacyId": "280002548139",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "economia-impostos"
+    },
+    {
+      "candidacyId": "280002548139",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "emprego-renda"
+    },
+    {
+      "candidacyId": "280002548139",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "saude"
+    },
+    {
+      "candidacyId": "280002548139",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "educacao"
+    },
+    {
+      "candidacyId": "280002548139",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "seguranca-justica"
+    },
+    {
+      "candidacyId": "280002548139",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "programas-sociais-habitacao"
+    },
+    {
+      "candidacyId": "280002548139",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "meio-ambiente-clima"
+    },
+    {
+      "candidacyId": "280002548139",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "infraestrutura-energia"
+    },
+    {
+      "candidacyId": "280002548139",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "agricultura-agronegocio"
+    },
+    {
+      "candidacyId": "280002548139",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "estado-instituicoes"
+    },
+    {
+      "candidacyId": "280002548139",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "tecnologia-ciencia-inovacao"
+    },
+    {
+      "candidacyId": "280002548139",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "politica-externa-defesa"
+    },
+    {
+      "candidacyId": "280002548139",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "outros-temas"
+    },
+    {
+      "candidacyId": "280002539826",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "economia-impostos"
+    },
+    {
+      "candidacyId": "280002539826",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "emprego-renda"
+    },
+    {
+      "candidacyId": "280002539826",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "saude"
+    },
+    {
+      "candidacyId": "280002539826",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "educacao"
+    },
+    {
+      "candidacyId": "280002539826",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "seguranca-justica"
+    },
+    {
+      "candidacyId": "280002539826",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "programas-sociais-habitacao"
+    },
+    {
+      "candidacyId": "280002539826",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "meio-ambiente-clima"
+    },
+    {
+      "candidacyId": "280002539826",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "infraestrutura-energia"
+    },
+    {
+      "candidacyId": "280002539826",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "agricultura-agronegocio"
+    },
+    {
+      "candidacyId": "280002539826",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "estado-instituicoes"
+    },
+    {
+      "candidacyId": "280002539826",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "tecnologia-ciencia-inovacao"
+    },
+    {
+      "candidacyId": "280002539826",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "politica-externa-defesa"
+    },
+    {
+      "candidacyId": "280002539826",
+      "evidence": [],
+      "note": null,
+      "proposalIds": [],
+      "reviewedAt": null,
+      "status": "pending",
+      "themeId": "outros-temas"
+    }
+  ],
+  "methodology": {
+    "changelog": [
+      "Versão preparada antes de qualquer extração ou classificação de propostas reais."
+    ],
+    "commit": "61f70148c0c01f5bb2ac226248f6f45b21e2cadd",
+    "releasedAt": "2026-08-16T00:39:20Z",
+    "sourcePath": "content/metodologia/1.0.md",
+    "status": "frozen",
+    "version": "1.0"
+  },
+  "proposals": [],
+  "release": {
+    "candidateIds": [
+      "280002552484",
+      "280002551975",
+      "280002551547",
+      "280002551544",
+      "280002541457",
+      "280002542548",
+      "280002553884",
+      "280002540694",
+      "280002551932",
+      "280002552487",
+      "280002538811",
+      "280002548139",
+      "280002539826"
+    ],
+    "contentSha256": "55517210d082acab33b7314feb4fda8d2b13f0868ad9aa26a57a26b267a479dd",
+    "createdAt": "2026-08-15T19:35:53.000Z",
+    "files": [
+      {
+        "byteSize": 4061,
+        "path": "temas.json",
+        "sha256": "c75420d3fbe5a227ddbb02bbebad9212e2e335d57e6b2bf645cd2ca3cd1d39f6"
+      },
+      {
+        "byteSize": 1434,
+        "path": "etiquetas.json",
+        "sha256": "b7c519de98f9ce1e29f8406db445133ccb08b6614297bd5d4a2fd1aa8d9d0a8a"
+      },
+      {
+        "byteSize": 21117,
+        "path": "candidaturas.json",
+        "sha256": "3b841634a99a55cef98d07203771701cdfb42f3786b9fefa03d4abb267ca7713"
+      },
+      {
+        "byteSize": 16783,
+        "path": "documentos.json",
+        "sha256": "494e4e75f5db56d483e4b3414bdc3376d33b46bf487911c259c1513018fc0a6d"
+      },
+      {
+        "byteSize": 3,
+        "path": "propostas.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      {
+        "byteSize": 32087,
+        "path": "cobertura.json",
+        "sha256": "344b8f1eda686c80462c4a929176af6f80bdc796d2ab19ec0d1b02eceabc650e"
+      },
+      {
+        "byteSize": 3,
+        "path": "decisoes.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      {
+        "byteSize": 153,
+        "path": "propostas.csv",
+        "sha256": "99608df2ec616c1be0f95857648a81d282ef67941a66dc256b33ae3fed9c37f1"
+      },
+      {
+        "byteSize": 8660,
+        "path": "cobertura.csv",
+        "sha256": "148debae2fd4dc5123a6913fb3c5ad2a60367d5e8d7759379cfdf77daa38d94b"
+      }
+    ],
+    "id": "2026-08-15.7",
+    "methodologyVersion": "1.0",
+    "publishedCandidateIds": [],
+    "schemaVersion": "1.0.0",
+    "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+    "sourceStatus": "divergent"
+  },
+  "schemaVersion": "1.0.0",
+  "secondaryTags": [
+    {
+      "description": "Políticas e ações culturais.",
+      "id": "cultura",
+      "title": "Cultura"
+    },
+    {
+      "description": "Prática esportiva e políticas de esporte.",
+      "id": "esporte",
+      "title": "Esporte"
+    },
+    {
+      "description": "Proteção e promoção de direitos humanos.",
+      "id": "direitos-humanos",
+      "title": "Direitos humanos"
+    },
+    {
+      "description": "Igualdade racial e combate ao racismo.",
+      "id": "igualdade-racial",
+      "title": "Igualdade racial"
+    },
+    {
+      "description": "Direitos e políticas para povos indígenas.",
+      "id": "povos-indigenas",
+      "title": "Povos indígenas"
+    },
+    {
+      "description": "Direitos das mulheres e políticas de gênero.",
+      "id": "mulheres-genero",
+      "title": "Mulheres e gênero"
+    },
+    {
+      "description": "Direitos relacionados à orientação sexual e à identidade de gênero.",
+      "id": "diversidade-sexual-genero",
+      "title": "Diversidade sexual e de gênero"
+    },
+    {
+      "description": "Direitos e políticas para crianças e adolescentes.",
+      "id": "infancia-adolescencia",
+      "title": "Infância e adolescência"
+    },
+    {
+      "description": "Acessibilidade, inclusão e direitos das pessoas com deficiência.",
+      "id": "pessoas-com-deficiencia",
+      "title": "Pessoas com deficiência"
+    },
+    {
+      "description": "Direitos e políticas para pessoas idosas.",
+      "id": "pessoas-idosas",
+      "title": "Pessoas idosas"
+    }
+  ],
+  "source": {
+    "cadence": "daily",
+    "ckanMetadataModifiedAt": "2026-08-03T19:53:04.109Z",
+    "csvGeneratedAt": "2026-08-15T19:30:10.000Z",
+    "datasetId": "ba2d7d69-5bf5-4379-8c91-664c11f75a2e",
+    "datasetUrl": "https://dadosabertos.tse.jus.br/dataset/candidatos-2026",
+    "licenseId": "cc-by",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "reconciliation": {
+      "candidateMetadataMismatches": [],
+      "csvOnlyCandidateIds": [],
+      "currentRestDocumentsMissingFromZip": [
+        "280017113380",
+        "280017113417",
+        "280017119534"
+      ],
+      "restDocumentsMissingFromZip": [
+        "280017113380",
+        "280017113417",
+        "280017119534"
+      ],
+      "restOnlyCandidateIds": [
+        "280002553884"
+      ],
+      "zipDocumentsMissingFromRest": []
+    },
+    "resources": [
+      {
+        "etag": "\"2d2633-6591b0b99cba4\"",
+        "format": "CSV",
+        "id": "7748de82-a23b-47c4-9ec1-35535d945e5b",
+        "lastModified": "2026-08-15T19:35:53.000Z",
+        "name": "Candidatos",
+        "sha256": "c3d13ae50f95024f43046acb4458a4420a620e86526fed665f9e60c8dc6068df",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip"
+      },
+      {
+        "etag": "\"b0e236-659104efa87cc\"",
+        "format": "PDF",
+        "id": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+        "lastModified": "2026-08-15T06:47:19.000Z",
+        "name": "BR - Proposta de governo",
+        "sha256": "13e47bbd0bd0b64398f2a3508e31d1a09b84883bee046165278f3d088a62f5be",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+      }
+    ],
+    "rest": {
+      "candidateIds": [
+        "280002538811",
+        "280002539826",
+        "280002540694",
+        "280002541457",
+        "280002542548",
+        "280002548139",
+        "280002551544",
+        "280002551547",
+        "280002551932",
+        "280002551975",
+        "280002552484",
+        "280002552487",
+        "280002553884"
+      ],
+      "electionId": "20322002026",
+      "observedAt": "2026-08-15T19:35:53.000Z",
+      "planDocuments": [
+        {
+          "byteSize": 1431032,
+          "candidacyId": "280002538811",
+          "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017119534",
+          "documentId": "280017119534",
+          "lastModified": null,
+          "officialFilename": "pje-ProgramaSAMARA_02 (1).pdf",
+          "position": 0,
+          "sha256": "23c510d5b06bb149bb9390bbc144dcda9cfd2b6a677a854b3d993b16ed7a94e6"
+        },
+        {
+          "byteSize": 102070,
+          "candidacyId": "280002538811",
+          "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998025",
+          "documentId": "280016998025",
+          "lastModified": null,
+          "officialFilename": "pje-PROGRAMA SAMARA MARTINS AGOSTO 2026.pdf",
+          "position": 1,
+          "sha256": "2caad1effa29c6a8d602b89f4f1accf086eca3fc793e03c085d58f265a5d3049"
+        },
+        {
+          "byteSize": 882639,
+          "candidacyId": "280002539826",
+          "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
+          "documentId": "280016919931",
+          "lastModified": null,
+          "officialFilename": "planogoverno10120.pdf",
+          "position": 0,
+          "sha256": "5a5804622017a8e9c123fb64540a5ee3d06009de681026b505bc2a152d5e646e"
+        },
+        {
+          "byteSize": 1691345,
+          "candidacyId": "280002540694",
+          "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789",
+          "documentId": "280017002789",
+          "lastModified": null,
+          "officialFilename": "Plano de Governo Missao 2026  Finalcompressed.pdf",
+          "position": 0,
+          "sha256": "cdece60b71117c7820dbf90a7d795f76f3b1d1aaa5ebb8ce11f47e9ca6227b5a"
+        },
+        {
+          "byteSize": 738999,
+          "candidacyId": "280002541457",
+          "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998007",
+          "documentId": "280016998007",
+          "lastModified": null,
+          "officialFilename": "Programa PSTU EleiAAes 2026.pdf",
+          "position": 0,
+          "sha256": "1868565fb0d5de77d40a982a1be07dc7f44f7af7565ee3b40d93b31407d31468"
+        },
+        {
+          "byteSize": 1189907,
+          "candidacyId": "280002542548",
+          "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017016005",
+          "documentId": "280017016005",
+          "lastModified": null,
+          "officialFilename": "0806JOB838PTlivroplanodegovernocompressed.pdf",
+          "position": 0,
+          "sha256": "e1c162c20c81dafadf69b10bab230b5a6dc48f6b6c27c2cfce853b131a8bcc36"
+        },
+        {
+          "byteSize": 1612696,
+          "candidacyId": "280002548139",
+          "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017075366",
+          "documentId": "280017075366",
+          "lastModified": null,
+          "officialFilename": "Brasil em Primeiro Lugar.pdf",
+          "position": 0,
+          "sha256": "df2acdb7a6d8b080d6d8a235b8fe8f0d987bf0f24be4f4aa9abc80e4ebb24904"
+        },
+        {
+          "byteSize": 1940855,
+          "candidacyId": "280002551544",
+          "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104726",
+          "documentId": "280017104726",
+          "lastModified": null,
+          "officialFilename": "DiretrizesPlanodeGovernoFlavioBolsonaro20272030versaofinal.pdf",
+          "position": 0,
+          "sha256": "7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4"
+        },
+        {
+          "byteSize": 1953868,
+          "candidacyId": "280002551547",
+          "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104778",
+          "documentId": "280017104778",
+          "lastModified": null,
+          "officialFilename": "PLANO DE GOVERNOO BRASIL DOS NOSSOS SONHOS.pdf",
+          "position": 0,
+          "sha256": "49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605"
+        },
+        {
+          "byteSize": 1000707,
+          "candidacyId": "280002551932",
+          "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+          "documentId": "280017106566",
+          "lastModified": null,
+          "officialFilename": "Plano de Governo Ronaldo Caiado Presidente.pdf",
+          "position": 0,
+          "sha256": "b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415"
+        },
+        {
+          "byteSize": 314957,
+          "candidacyId": "280002551975",
+          "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017107286",
+          "documentId": "280017107286",
+          "lastModified": null,
+          "officialFilename": "Programa Politico do PCB eleicoes 20261.pdf",
+          "position": 0,
+          "sha256": "52f765533f93409a595d780e9ad8634de72db8f05794a2e70e808913c2ed4dff"
+        },
+        {
+          "byteSize": 64568,
+          "candidacyId": "280002552484",
+          "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113380",
+          "documentId": "280017113380",
+          "lastModified": null,
+          "officialFilename": "PLANO DE GOVERNO.pdf",
+          "position": 0,
+          "sha256": "6390152c66285558ecd5459f4f73f3f65650beb77022b14e7750190b1b536d68"
+        },
+        {
+          "byteSize": 96070,
+          "candidacyId": "280002552487",
+          "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113417",
+          "documentId": "280017113417",
+          "lastModified": null,
+          "officialFilename": "PCOprogramadegoverno2026.pdf",
+          "position": 0,
+          "sha256": "ed380b23d6e033e8616ce71efcf66eb42d2baee2b58f1c9ae80690009c20dfe9"
+        }
+      ],
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/listar/2026/BR/20322002026/1/candidatos"
+    },
+    "syncSignature": "fbd56142c7bf2f11f9f24a562f317fc4a5576760987c93bf0a05400d8d8cffd1",
+    "syncSignatureVersion": "semantic-v2"
+  },
+  "themes": [
+    {
+      "boundaryExamples": [],
+      "id": "economia-impostos",
+      "order": 1,
+      "residual": false,
+      "scope": "Política fiscal, tributação, inflação, juros, dívida pública e câmbio.",
+      "shortTitle": "Economia",
+      "title": "Economia e impostos"
+    },
+    {
+      "boundaryExamples": [],
+      "id": "emprego-renda",
+      "order": 2,
+      "residual": false,
+      "scope": "Mercado de trabalho, salário mínimo, qualificação profissional, empreendedorismo e MEI.",
+      "shortTitle": "Emprego e renda",
+      "title": "Emprego e renda"
+    },
+    {
+      "boundaryExamples": [],
+      "id": "saude",
+      "order": 3,
+      "residual": false,
+      "scope": "SUS, financiamento, filas, atenção básica, saúde mental e vigilância sanitária.",
+      "shortTitle": "Saúde",
+      "title": "Saúde"
+    },
+    {
+      "boundaryExamples": [
+        "Merenda escolar",
+        "Ensino universitário"
+      ],
+      "id": "educacao",
+      "order": 4,
+      "residual": false,
+      "scope": "Educação básica, superior e técnica, creches, alfabetização, carreira docente e merenda.",
+      "shortTitle": "Educação",
+      "title": "Educação"
+    },
+    {
+      "boundaryExamples": [],
+      "id": "seguranca-justica",
+      "order": 5,
+      "residual": false,
+      "scope": "Policiamento, armas, sistema prisional, fronteiras, política de drogas e Judiciário.",
+      "shortTitle": "Segurança e justiça",
+      "title": "Segurança pública e justiça"
+    },
+    {
+      "boundaryExamples": [
+        "Segurança alimentar"
+      ],
+      "id": "programas-sociais-habitacao",
+      "order": 6,
+      "residual": false,
+      "scope": "Transferência de renda, combate à fome e à pobreza, habitação popular e segurança alimentar.",
+      "shortTitle": "Programas sociais",
+      "title": "Programas sociais e habitação"
+    },
+    {
+      "boundaryExamples": [
+        "Metas de emissões"
+      ],
+      "id": "meio-ambiente-clima",
+      "order": 7,
+      "residual": false,
+      "scope": "Desmatamento, emissões, biodiversidade, política climática e licenciamento ambiental.",
+      "shortTitle": "Meio ambiente",
+      "title": "Meio ambiente e clima"
+    },
+    {
+      "boundaryExamples": [
+        "Saneamento",
+        "Geração de energia"
+      ],
+      "id": "infraestrutura-energia",
+      "order": 8,
+      "residual": false,
+      "scope": "Transporte, geração e matriz energética, saneamento, telecomunicações e obras.",
+      "shortTitle": "Infraestrutura",
+      "title": "Infraestrutura e energia"
+    },
+    {
+      "boundaryExamples": [
+        "Crédito rural"
+      ],
+      "id": "agricultura-agronegocio",
+      "order": 9,
+      "residual": false,
+      "scope": "Crédito rural, agricultura familiar, seguro rural, reforma agrária e exportação agropecuária.",
+      "shortTitle": "Agricultura",
+      "title": "Agricultura e agronegócio"
+    },
+    {
+      "boundaryExamples": [],
+      "id": "estado-instituicoes",
+      "order": 10,
+      "residual": false,
+      "scope": "Reforma administrativa, combate à corrupção, privatizações e relações entre Poderes.",
+      "shortTitle": "Estado e instituições",
+      "title": "Estado e instituições"
+    },
+    {
+      "boundaryExamples": [
+        "Pesquisa universitária"
+      ],
+      "id": "tecnologia-ciencia-inovacao",
+      "order": 11,
+      "residual": false,
+      "scope": "Digitalização de serviços, inteligência artificial, pesquisa e produção científica universitária.",
+      "shortTitle": "Ciência e tecnologia",
+      "title": "Tecnologia, ciência e inovação"
+    },
+    {
+      "boundaryExamples": [
+        "Comércio exterior"
+      ],
+      "id": "politica-externa-defesa",
+      "order": 12,
+      "residual": false,
+      "scope": "Relações internacionais, comércio exterior, Forças Armadas e soberania.",
+      "shortTitle": "Política externa",
+      "title": "Política externa e defesa"
+    },
+    {
+      "boundaryExamples": [
+        "Cultura",
+        "Esporte"
+      ],
+      "id": "outros-temas",
+      "order": 13,
+      "residual": true,
+      "scope": "Tema residual para propostas cujo objeto principal não cabe nos doze temas anteriores.",
+      "shortTitle": "Outros temas",
+      "title": "Outros temas"
+    }
+  ]
+}

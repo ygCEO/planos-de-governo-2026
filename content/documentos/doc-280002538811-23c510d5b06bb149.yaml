@@ -1,0 +1,26 @@
+{
+  "byteSize": 1431032,
+  "candidacyId": "280002538811",
+  "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017119534",
+  "capturedAt": "2026-08-15T19:35:53.000Z",
+  "id": "doc-280002538811-23c510d5b06bb149",
+  "mimeType": "application/pdf",
+  "officialFilename": "pje-ProgramaSAMARA_02 (1).pdf",
+  "pageCount": 42,
+  "pageCountVerified": false,
+  "preservationStatus": "pending_upload",
+  "preservedObjectKey": "pdf/23c510d5b06bb149bb9390bbc144dcda9cfd2b6a677a854b3d993b16ed7a94e6.pdf",
+  "preservedPublicUrl": null,
+  "sha256": "23c510d5b06bb149bb9390bbc144dcda9cfd2b6a677a854b3d993b16ed7a94e6",
+  "sources": [
+    {
+      "archiveEntry": null,
+      "documentId": "280017119534",
+      "kind": "divulgacand_rest",
+      "observedAt": "2026-08-15T19:35:53.000Z",
+      "resourceId": null,
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017119534"
+    }
+  ],
+  "supersedesDocumentId": null
+}

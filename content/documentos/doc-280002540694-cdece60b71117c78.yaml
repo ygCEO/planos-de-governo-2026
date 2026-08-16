@@ -1,0 +1,34 @@
+{
+  "byteSize": 1691345,
+  "candidacyId": "280002540694",
+  "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789",
+  "capturedAt": "2026-08-15T19:35:53.000Z",
+  "id": "doc-280002540694-cdece60b71117c78",
+  "mimeType": "application/pdf",
+  "officialFilename": "Plano de Governo Missao 2026  Finalcompressed.pdf",
+  "pageCount": 51,
+  "pageCountVerified": false,
+  "preservationStatus": "pending_upload",
+  "preservedObjectKey": "pdf/cdece60b71117c7820dbf90a7d795f76f3b1d1aaa5ebb8ce11f47e9ca6227b5a.pdf",
+  "preservedPublicUrl": null,
+  "sha256": "cdece60b71117c7820dbf90a7d795f76f3b1d1aaa5ebb8ce11f47e9ca6227b5a",
+  "sources": [
+    {
+      "archiveEntry": "BR/2026BR280002540694_01.pdf",
+      "documentId": null,
+      "kind": "ckan_zip",
+      "observedAt": "2026-08-15T06:47:19.000Z",
+      "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+    },
+    {
+      "archiveEntry": null,
+      "documentId": "280017002789",
+      "kind": "divulgacand_rest",
+      "observedAt": "2026-08-15T19:35:53.000Z",
+      "resourceId": null,
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789"
+    }
+  ],
+  "supersedesDocumentId": null
+}

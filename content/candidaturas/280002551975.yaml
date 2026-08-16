@@ -1,0 +1,55 @@
+{
+  "ballotName": "EDMILSON COSTA",
+  "ballotNumber": 21,
+  "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+  "editorialStatus": "pending",
+  "electionYear": 2026,
+  "id": "280002551975",
+  "jurisdiction": "BR",
+  "observedDocumentCorpora": {
+    "restSha256s": [
+      "52f765533f93409a595d780e9ad8634de72db8f05794a2e70e808913c2ed4dff"
+    ],
+    "zipSha256s": [
+      "52f765533f93409a595d780e9ad8634de72db8f05794a2e70e808913c2ed4dff"
+    ]
+  },
+  "observedDocumentSha256s": [
+    "52f765533f93409a595d780e9ad8634de72db8f05794a2e70e808913c2ed4dff"
+  ],
+  "office": "presidente",
+  "officialStatus": {
+    "code": "-3",
+    "label": "Aguardando julgamento",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "source": "reconciled"
+  },
+  "officialTotalizationStatus": {
+    "label": "Concorrendo",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "source": "divulgacand-rest"
+  },
+  "party": {
+    "acronym": "PCB",
+    "name": "PARTIDO COMUNISTA BRASILEIRO"
+  },
+  "planDocumentIds": [
+    "doc-280002551975-52f765533f93409a"
+  ],
+  "quality": {
+    "coldReviewCompletedAt": null,
+    "firstPassCompletedAt": null,
+    "readingHours": null,
+    "retestCompletedAt": null,
+    "secondPassCompletedAt": null
+  },
+  "reconciliationStatus": "reconciled",
+  "sourceIds": {
+    "csvCandidateId": "280002551975",
+    "csvElectionCode": "6257",
+    "restCandidateId": "280002551975",
+    "restElectionId": "20322002026"
+  },
+  "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+  "sqCandidate": "280002551975"
+}

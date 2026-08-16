@@ -1,0 +1,12 @@
+[
+  { "id": "cultura", "title": "Cultura", "description": "Políticas e ações culturais." },
+  { "id": "esporte", "title": "Esporte", "description": "Prática esportiva e políticas de esporte." },
+  { "id": "direitos-humanos", "title": "Direitos humanos", "description": "Proteção e promoção de direitos humanos." },
+  { "id": "igualdade-racial", "title": "Igualdade racial", "description": "Igualdade racial e combate ao racismo." },
+  { "id": "povos-indigenas", "title": "Povos indígenas", "description": "Direitos e políticas para povos indígenas." },
+  { "id": "mulheres-genero", "title": "Mulheres e gênero", "description": "Direitos das mulheres e políticas de gênero." },
+  { "id": "diversidade-sexual-genero", "title": "Diversidade sexual e de gênero", "description": "Direitos relacionados à orientação sexual e à identidade de gênero." },
+  { "id": "infancia-adolescencia", "title": "Infância e adolescência", "description": "Direitos e políticas para crianças e adolescentes." },
+  { "id": "pessoas-com-deficiencia", "title": "Pessoas com deficiência", "description": "Acessibilidade, inclusão e direitos das pessoas com deficiência." },
+  { "id": "pessoas-idosas", "title": "Pessoas idosas", "description": "Direitos e políticas para pessoas idosas." }
+]

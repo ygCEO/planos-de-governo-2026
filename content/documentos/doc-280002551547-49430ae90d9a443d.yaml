@@ -1,0 +1,34 @@
+{
+  "byteSize": 1953868,
+  "candidacyId": "280002551547",
+  "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104778",
+  "capturedAt": "2026-08-15T19:35:53.000Z",
+  "id": "doc-280002551547-49430ae90d9a443d",
+  "mimeType": "application/pdf",
+  "officialFilename": "PLANO DE GOVERNOO BRASIL DOS NOSSOS SONHOS.pdf",
+  "pageCount": 200,
+  "pageCountVerified": false,
+  "preservationStatus": "pending_upload",
+  "preservedObjectKey": "pdf/49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605.pdf",
+  "preservedPublicUrl": null,
+  "sha256": "49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605",
+  "sources": [
+    {
+      "archiveEntry": "BR/2026BR280002551547_01.pdf",
+      "documentId": null,
+      "kind": "ckan_zip",
+      "observedAt": "2026-08-15T06:47:19.000Z",
+      "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+    },
+    {
+      "archiveEntry": null,
+      "documentId": "280017104778",
+      "kind": "divulgacand_rest",
+      "observedAt": "2026-08-15T19:35:53.000Z",
+      "resourceId": null,
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104778"
+    }
+  ],
+  "supersedesDocumentId": null
+}

@@ -1,0 +1,72 @@
+{
+  "candidateIds": [
+    "280002552484",
+    "280002551975",
+    "280002551547",
+    "280002551544",
+    "280002541457",
+    "280002542548",
+    "280002553884",
+    "280002540694",
+    "280002551932",
+    "280002552487",
+    "280002538811",
+    "280002548139",
+    "280002539826"
+  ],
+  "contentSha256": "a0220b6d98d9b9ef8fe28644353102b12e7ce41e38477db06af8bbcb76f539ec",
+  "createdAt": "2026-08-15T19:30:10.000Z",
+  "files": [
+    {
+      "byteSize": 4061,
+      "path": "temas.json",
+      "sha256": "c75420d3fbe5a227ddbb02bbebad9212e2e335d57e6b2bf645cd2ca3cd1d39f6"
+    },
+    {
+      "byteSize": 1434,
+      "path": "etiquetas.json",
+      "sha256": "b7c519de98f9ce1e29f8406db445133ccb08b6614297bd5d4a2fd1aa8d9d0a8a"
+    },
+    {
+      "byteSize": 13924,
+      "path": "candidaturas.json",
+      "sha256": "ecf03b26859898f51ce2b8319240eba8196e5b6429d865e1aa82a700c259e8d3"
+    },
+    {
+      "byteSize": 16783,
+      "path": "documentos.json",
+      "sha256": "2041b952668f644d26a40c1d69bfb9486c58a6d6e33b14f29eb848a555a5f533"
+    },
+    {
+      "byteSize": 3,
+      "path": "propostas.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "byteSize": 32087,
+      "path": "cobertura.json",
+      "sha256": "344b8f1eda686c80462c4a929176af6f80bdc796d2ab19ec0d1b02eceabc650e"
+    },
+    {
+      "byteSize": 3,
+      "path": "decisoes.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "byteSize": 153,
+      "path": "propostas.csv",
+      "sha256": "99608df2ec616c1be0f95857648a81d282ef67941a66dc256b33ae3fed9c37f1"
+    },
+    {
+      "byteSize": 8660,
+      "path": "cobertura.csv",
+      "sha256": "148debae2fd4dc5123a6913fb3c5ad2a60367d5e8d7759379cfdf77daa38d94b"
+    }
+  ],
+  "id": "2026-08-15.6",
+  "methodologyVersion": "1.0",
+  "publishedCandidateIds": [],
+  "schemaVersion": "1.0.0",
+  "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+  "sourceStatus": "divergent"
+}

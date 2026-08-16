@@ -1,0 +1,508 @@
+[
+  {
+    "ballotName": "CLARIANA BARAO",
+    "ballotNumber": 27,
+    "comparisonEligible": false,
+    "editorialStatus": "awaiting_consolidation",
+    "electionYear": 2026,
+    "id": "280002552484",
+    "jurisdiction": "BR",
+    "office": "presidente",
+    "officialStatus": {
+      "code": "-3",
+      "label": "Aguardando julgamento",
+      "observedAt": "2026-08-15T19:30:10.000Z",
+      "source": "reconciled"
+    },
+    "party": {
+      "acronym": "DC",
+      "name": "DEMOCRACIA CRISTÃ"
+    },
+    "planDocumentIds": [
+      "doc-280002552484-6390152c66285558"
+    ],
+    "quality": {
+      "coldReviewCompletedAt": null,
+      "firstPassCompletedAt": null,
+      "readingHours": null,
+      "retestCompletedAt": null,
+      "secondPassCompletedAt": null
+    },
+    "reconciliationStatus": "document_mismatch",
+    "sourceIds": {
+      "csvCandidateId": "280002552484",
+      "csvElectionCode": "6257",
+      "restCandidateId": "280002552484",
+      "restElectionId": "20322002026"
+    },
+    "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+    "sqCandidate": "280002552484"
+  },
+  {
+    "ballotName": "EDMILSON COSTA",
+    "ballotNumber": 21,
+    "comparisonEligible": false,
+    "editorialStatus": "pending",
+    "electionYear": 2026,
+    "id": "280002551975",
+    "jurisdiction": "BR",
+    "office": "presidente",
+    "officialStatus": {
+      "code": "-3",
+      "label": "Aguardando julgamento",
+      "observedAt": "2026-08-15T19:30:10.000Z",
+      "source": "reconciled"
+    },
+    "party": {
+      "acronym": "PCB",
+      "name": "PARTIDO COMUNISTA BRASILEIRO"
+    },
+    "planDocumentIds": [
+      "doc-280002551975-52f765533f93409a"
+    ],
+    "quality": {
+      "coldReviewCompletedAt": null,
+      "firstPassCompletedAt": null,
+      "readingHours": null,
+      "retestCompletedAt": null,
+      "secondPassCompletedAt": null
+    },
+    "reconciliationStatus": "reconciled",
+    "sourceIds": {
+      "csvCandidateId": "280002551975",
+      "csvElectionCode": "6257",
+      "restCandidateId": "280002551975",
+      "restElectionId": "20322002026"
+    },
+    "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+    "sqCandidate": "280002551975"
+  },
+  {
+    "ballotName": "ESCRITOR AUGUSTO CURY",
+    "ballotNumber": 70,
+    "comparisonEligible": false,
+    "editorialStatus": "pending",
+    "electionYear": 2026,
+    "id": "280002551547",
+    "jurisdiction": "BR",
+    "office": "presidente",
+    "officialStatus": {
+      "code": "-3",
+      "label": "Aguardando julgamento",
+      "observedAt": "2026-08-15T19:30:10.000Z",
+      "source": "reconciled"
+    },
+    "party": {
+      "acronym": "AVANTE",
+      "name": "AVANTE"
+    },
+    "planDocumentIds": [
+      "doc-280002551547-49430ae90d9a443d"
+    ],
+    "quality": {
+      "coldReviewCompletedAt": null,
+      "firstPassCompletedAt": null,
+      "readingHours": null,
+      "retestCompletedAt": null,
+      "secondPassCompletedAt": null
+    },
+    "reconciliationStatus": "reconciled",
+    "sourceIds": {
+      "csvCandidateId": "280002551547",
+      "csvElectionCode": "6257",
+      "restCandidateId": "280002551547",
+      "restElectionId": "20322002026"
+    },
+    "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+    "sqCandidate": "280002551547"
+  },
+  {
+    "ballotName": "FLAVIO BOLSONARO",
+    "ballotNumber": 22,
+    "comparisonEligible": false,
+    "editorialStatus": "pending",
+    "electionYear": 2026,
+    "id": "280002551544",
+    "jurisdiction": "BR",
+    "office": "presidente",
+    "officialStatus": {
+      "code": "-3",
+      "label": "Aguardando julgamento",
+      "observedAt": "2026-08-15T19:30:10.000Z",
+      "source": "reconciled"
+    },
+    "party": {
+      "acronym": "PL",
+      "name": "PARTIDO LIBERAL"
+    },
+    "planDocumentIds": [
+      "doc-280002551544-7d1d95075e11e3c4"
+    ],
+    "quality": {
+      "coldReviewCompletedAt": null,
+      "firstPassCompletedAt": null,
+      "readingHours": null,
+      "retestCompletedAt": null,
+      "secondPassCompletedAt": null
+    },
+    "reconciliationStatus": "reconciled",
+    "sourceIds": {
+      "csvCandidateId": "280002551544",
+      "csvElectionCode": "6257",
+      "restCandidateId": "280002551544",
+      "restElectionId": "20322002026"
+    },
+    "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+    "sqCandidate": "280002551544"
+  },
+  {
+    "ballotName": "HERTZ DIAS",
+    "ballotNumber": 16,
+    "comparisonEligible": false,
+    "editorialStatus": "pending",
+    "electionYear": 2026,
+    "id": "280002541457",
+    "jurisdiction": "BR",
+    "office": "presidente",
+    "officialStatus": {
+      "code": "-3",
+      "label": "Aguardando julgamento",
+      "observedAt": "2026-08-15T19:30:10.000Z",
+      "source": "reconciled"
+    },
+    "party": {
+      "acronym": "PSTU",
+      "name": "PARTIDO SOCIALISTA  DOS TRABALHADORES UNIFICADO"
+    },
+    "planDocumentIds": [
+      "doc-280002541457-1868565fb0d5de77"
+    ],
+    "quality": {
+      "coldReviewCompletedAt": null,
+      "firstPassCompletedAt": null,
+      "readingHours": null,
+      "retestCompletedAt": null,
+      "secondPassCompletedAt": null
+    },
+    "reconciliationStatus": "reconciled",
+    "sourceIds": {
+      "csvCandidateId": "280002541457",
+      "csvElectionCode": "6257",
+      "restCandidateId": "280002541457",
+      "restElectionId": "20322002026"
+    },
+    "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+    "sqCandidate": "280002541457"
+  },
+  {
+    "ballotName": "LULA",
+    "ballotNumber": 13,
+    "comparisonEligible": false,
+    "editorialStatus": "pending",
+    "electionYear": 2026,
+    "id": "280002542548",
+    "jurisdiction": "BR",
+    "office": "presidente",
+    "officialStatus": {
+      "code": "-3",
+      "label": "Aguardando julgamento",
+      "observedAt": "2026-08-15T19:30:10.000Z",
+      "source": "reconciled"
+    },
+    "party": {
+      "acronym": "PT",
+      "name": "PARTIDO DOS TRABALHADORES"
+    },
+    "planDocumentIds": [
+      "doc-280002542548-e1c162c20c81dafa"
+    ],
+    "quality": {
+      "coldReviewCompletedAt": null,
+      "firstPassCompletedAt": null,
+      "readingHours": null,
+      "retestCompletedAt": null,
+      "secondPassCompletedAt": null
+    },
+    "reconciliationStatus": "reconciled",
+    "sourceIds": {
+      "csvCandidateId": "280002542548",
+      "csvElectionCode": "6257",
+      "restCandidateId": "280002542548",
+      "restElectionId": "20322002026"
+    },
+    "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+    "sqCandidate": "280002542548"
+  },
+  {
+    "ballotName": "PABLO MARÇAL",
+    "ballotNumber": 28,
+    "comparisonEligible": false,
+    "editorialStatus": "awaiting_consolidation",
+    "electionYear": 2026,
+    "id": "280002553884",
+    "jurisdiction": "BR",
+    "office": "presidente",
+    "officialStatus": {
+      "code": "REST",
+      "label": "Aguardando julgamento",
+      "observedAt": "2026-08-15T19:30:10.000Z",
+      "source": "divulgacand-rest"
+    },
+    "party": {
+      "acronym": "PRTB",
+      "name": null
+    },
+    "planDocumentIds": [],
+    "quality": {
+      "coldReviewCompletedAt": null,
+      "firstPassCompletedAt": null,
+      "readingHours": null,
+      "retestCompletedAt": null,
+      "secondPassCompletedAt": null
+    },
+    "reconciliationStatus": "rest_only",
+    "sourceIds": {
+      "csvCandidateId": null,
+      "csvElectionCode": null,
+      "restCandidateId": "280002553884",
+      "restElectionId": "20322002026"
+    },
+    "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+    "sqCandidate": "280002553884"
+  },
+  {
+    "ballotName": "RENAN SANTOS",
+    "ballotNumber": 14,
+    "comparisonEligible": false,
+    "editorialStatus": "pending",
+    "electionYear": 2026,
+    "id": "280002540694",
+    "jurisdiction": "BR",
+    "office": "presidente",
+    "officialStatus": {
+      "code": "-3",
+      "label": "Aguardando julgamento",
+      "observedAt": "2026-08-15T19:30:10.000Z",
+      "source": "reconciled"
+    },
+    "party": {
+      "acronym": "MISSÃO",
+      "name": "PARTIDO MISSÃO"
+    },
+    "planDocumentIds": [
+      "doc-280002540694-cdece60b71117c78"
+    ],
+    "quality": {
+      "coldReviewCompletedAt": null,
+      "firstPassCompletedAt": null,
+      "readingHours": null,
+      "retestCompletedAt": null,
+      "secondPassCompletedAt": null
+    },
+    "reconciliationStatus": "reconciled",
+    "sourceIds": {
+      "csvCandidateId": "280002540694",
+      "csvElectionCode": "6257",
+      "restCandidateId": "280002540694",
+      "restElectionId": "20322002026"
+    },
+    "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+    "sqCandidate": "280002540694"
+  },
+  {
+    "ballotName": "RONALDO CAIADO",
+    "ballotNumber": 55,
+    "comparisonEligible": false,
+    "editorialStatus": "pending",
+    "electionYear": 2026,
+    "id": "280002551932",
+    "jurisdiction": "BR",
+    "office": "presidente",
+    "officialStatus": {
+      "code": "-3",
+      "label": "Aguardando julgamento",
+      "observedAt": "2026-08-15T19:30:10.000Z",
+      "source": "reconciled"
+    },
+    "party": {
+      "acronym": "PSD",
+      "name": "PARTIDO SOCIAL DEMOCRÁTICO"
+    },
+    "planDocumentIds": [
+      "doc-280002551932-b0ba46eb58d1827c"
+    ],
+    "quality": {
+      "coldReviewCompletedAt": null,
+      "firstPassCompletedAt": null,
+      "readingHours": null,
+      "retestCompletedAt": null,
+      "secondPassCompletedAt": null
+    },
+    "reconciliationStatus": "reconciled",
+    "sourceIds": {
+      "csvCandidateId": "280002551932",
+      "csvElectionCode": "6257",
+      "restCandidateId": "280002551932",
+      "restElectionId": "20322002026"
+    },
+    "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+    "sqCandidate": "280002551932"
+  },
+  {
+    "ballotName": "RUI COSTA PIMENTA",
+    "ballotNumber": 29,
+    "comparisonEligible": false,
+    "editorialStatus": "awaiting_consolidation",
+    "electionYear": 2026,
+    "id": "280002552487",
+    "jurisdiction": "BR",
+    "office": "presidente",
+    "officialStatus": {
+      "code": "-3",
+      "label": "Aguardando julgamento",
+      "observedAt": "2026-08-15T19:30:10.000Z",
+      "source": "reconciled"
+    },
+    "party": {
+      "acronym": "PCO",
+      "name": "PARTIDO DA CAUSA OPERÁRIA"
+    },
+    "planDocumentIds": [
+      "doc-280002552487-ed380b23d6e033e8"
+    ],
+    "quality": {
+      "coldReviewCompletedAt": null,
+      "firstPassCompletedAt": null,
+      "readingHours": null,
+      "retestCompletedAt": null,
+      "secondPassCompletedAt": null
+    },
+    "reconciliationStatus": "document_mismatch",
+    "sourceIds": {
+      "csvCandidateId": "280002552487",
+      "csvElectionCode": "6257",
+      "restCandidateId": "280002552487",
+      "restElectionId": "20322002026"
+    },
+    "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+    "sqCandidate": "280002552487"
+  },
+  {
+    "ballotName": "SAMARA",
+    "ballotNumber": 80,
+    "comparisonEligible": false,
+    "editorialStatus": "source_changed",
+    "electionYear": 2026,
+    "id": "280002538811",
+    "jurisdiction": "BR",
+    "office": "presidente",
+    "officialStatus": {
+      "code": "-3",
+      "label": "Aguardando julgamento",
+      "observedAt": "2026-08-15T19:30:10.000Z",
+      "source": "reconciled"
+    },
+    "party": {
+      "acronym": "UP",
+      "name": "UNIDADE POPULAR"
+    },
+    "planDocumentIds": [
+      "doc-280002538811-23c510d5b06bb149",
+      "doc-280002538811-2caad1effa29c6a8"
+    ],
+    "quality": {
+      "coldReviewCompletedAt": null,
+      "firstPassCompletedAt": null,
+      "readingHours": null,
+      "retestCompletedAt": null,
+      "secondPassCompletedAt": null
+    },
+    "reconciliationStatus": "document_mismatch",
+    "sourceIds": {
+      "csvCandidateId": "280002538811",
+      "csvElectionCode": "6257",
+      "restCandidateId": "280002538811",
+      "restElectionId": "20322002026"
+    },
+    "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+    "sqCandidate": "280002538811"
+  },
+  {
+    "ballotName": "VETERINÁRIO WILSON GRASSI",
+    "ballotNumber": 35,
+    "comparisonEligible": false,
+    "editorialStatus": "pending",
+    "electionYear": 2026,
+    "id": "280002548139",
+    "jurisdiction": "BR",
+    "office": "presidente",
+    "officialStatus": {
+      "code": "-3",
+      "label": "Aguardando julgamento",
+      "observedAt": "2026-08-15T19:30:10.000Z",
+      "source": "reconciled"
+    },
+    "party": {
+      "acronym": "DEMOCRATA",
+      "name": "DEMOCRATA"
+    },
+    "planDocumentIds": [
+      "doc-280002548139-df2acdb7a6d8b080"
+    ],
+    "quality": {
+      "coldReviewCompletedAt": null,
+      "firstPassCompletedAt": null,
+      "readingHours": null,
+      "retestCompletedAt": null,
+      "secondPassCompletedAt": null
+    },
+    "reconciliationStatus": "reconciled",
+    "sourceIds": {
+      "csvCandidateId": "280002548139",
+      "csvElectionCode": "6257",
+      "restCandidateId": "280002548139",
+      "restElectionId": "20322002026"
+    },
+    "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+    "sqCandidate": "280002548139"
+  },
+  {
+    "ballotName": "ZEMA",
+    "ballotNumber": 30,
+    "comparisonEligible": false,
+    "editorialStatus": "pending",
+    "electionYear": 2026,
+    "id": "280002539826",
+    "jurisdiction": "BR",
+    "office": "presidente",
+    "officialStatus": {
+      "code": "-3",
+      "label": "Aguardando julgamento",
+      "observedAt": "2026-08-15T19:30:10.000Z",
+      "source": "reconciled"
+    },
+    "party": {
+      "acronym": "NOVO",
+      "name": "PARTIDO NOVO"
+    },
+    "planDocumentIds": [
+      "doc-280002539826-5a5804622017a8e9"
+    ],
+    "quality": {
+      "coldReviewCompletedAt": null,
+      "firstPassCompletedAt": null,
+      "readingHours": null,
+      "retestCompletedAt": null,
+      "secondPassCompletedAt": null
+    },
+    "reconciliationStatus": "reconciled",
+    "sourceIds": {
+      "csvCandidateId": "280002539826",
+      "csvElectionCode": "6257",
+      "restCandidateId": "280002539826",
+      "restElectionId": "20322002026"
+    },
+    "sourceObservedAt": "2026-08-15T19:30:10.000Z",
+    "sqCandidate": "280002539826"
+  }
+]

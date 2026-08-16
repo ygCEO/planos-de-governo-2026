@@ -1,0 +1,55 @@
+{
+  "ballotName": "LULA",
+  "ballotNumber": 13,
+  "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+  "editorialStatus": "pending",
+  "electionYear": 2026,
+  "id": "280002542548",
+  "jurisdiction": "BR",
+  "observedDocumentCorpora": {
+    "restSha256s": [
+      "e1c162c20c81dafadf69b10bab230b5a6dc48f6b6c27c2cfce853b131a8bcc36"
+    ],
+    "zipSha256s": [
+      "e1c162c20c81dafadf69b10bab230b5a6dc48f6b6c27c2cfce853b131a8bcc36"
+    ]
+  },
+  "observedDocumentSha256s": [
+    "e1c162c20c81dafadf69b10bab230b5a6dc48f6b6c27c2cfce853b131a8bcc36"
+  ],
+  "office": "presidente",
+  "officialStatus": {
+    "code": "-3",
+    "label": "Aguardando julgamento",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "source": "reconciled"
+  },
+  "officialTotalizationStatus": {
+    "label": "Concorrendo",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "source": "divulgacand-rest"
+  },
+  "party": {
+    "acronym": "PT",
+    "name": "PARTIDO DOS TRABALHADORES"
+  },
+  "planDocumentIds": [
+    "doc-280002542548-e1c162c20c81dafa"
+  ],
+  "quality": {
+    "coldReviewCompletedAt": null,
+    "firstPassCompletedAt": null,
+    "readingHours": null,
+    "retestCompletedAt": null,
+    "secondPassCompletedAt": null
+  },
+  "reconciliationStatus": "reconciled",
+  "sourceIds": {
+    "csvCandidateId": "280002542548",
+    "csvElectionCode": "6257",
+    "restCandidateId": "280002542548",
+    "restElectionId": "20322002026"
+  },
+  "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+  "sqCandidate": "280002542548"
+}

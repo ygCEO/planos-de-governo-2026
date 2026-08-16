@@ -1,0 +1,55 @@
+{
+  "ballotName": "ZEMA",
+  "ballotNumber": 30,
+  "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+  "editorialStatus": "pending",
+  "electionYear": 2026,
+  "id": "280002539826",
+  "jurisdiction": "BR",
+  "observedDocumentCorpora": {
+    "restSha256s": [
+      "5a5804622017a8e9c123fb64540a5ee3d06009de681026b505bc2a152d5e646e"
+    ],
+    "zipSha256s": [
+      "5a5804622017a8e9c123fb64540a5ee3d06009de681026b505bc2a152d5e646e"
+    ]
+  },
+  "observedDocumentSha256s": [
+    "5a5804622017a8e9c123fb64540a5ee3d06009de681026b505bc2a152d5e646e"
+  ],
+  "office": "presidente",
+  "officialStatus": {
+    "code": "-3",
+    "label": "Aguardando julgamento",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "source": "reconciled"
+  },
+  "officialTotalizationStatus": {
+    "label": "Concorrendo",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "source": "divulgacand-rest"
+  },
+  "party": {
+    "acronym": "NOVO",
+    "name": "PARTIDO NOVO"
+  },
+  "planDocumentIds": [
+    "doc-280002539826-5a5804622017a8e9"
+  ],
+  "quality": {
+    "coldReviewCompletedAt": null,
+    "firstPassCompletedAt": null,
+    "readingHours": null,
+    "retestCompletedAt": null,
+    "secondPassCompletedAt": null
+  },
+  "reconciliationStatus": "reconciled",
+  "sourceIds": {
+    "csvCandidateId": "280002539826",
+    "csvElectionCode": "6257",
+    "restCandidateId": "280002539826",
+    "restElectionId": "20322002026"
+  },
+  "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+  "sqCandidate": "280002539826"
+}

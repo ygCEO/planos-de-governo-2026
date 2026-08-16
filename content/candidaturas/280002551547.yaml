@@ -1,0 +1,55 @@
+{
+  "ballotName": "ESCRITOR AUGUSTO CURY",
+  "ballotNumber": 70,
+  "corpusObservedAt": "2026-08-15T19:30:10.000Z",
+  "editorialStatus": "pending",
+  "electionYear": 2026,
+  "id": "280002551547",
+  "jurisdiction": "BR",
+  "observedDocumentCorpora": {
+    "restSha256s": [
+      "49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605"
+    ],
+    "zipSha256s": [
+      "49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605"
+    ]
+  },
+  "observedDocumentSha256s": [
+    "49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605"
+  ],
+  "office": "presidente",
+  "officialStatus": {
+    "code": "-3",
+    "label": "Aguardando julgamento",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "source": "reconciled"
+  },
+  "officialTotalizationStatus": {
+    "label": "Concorrendo",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "source": "divulgacand-rest"
+  },
+  "party": {
+    "acronym": "AVANTE",
+    "name": "AVANTE"
+  },
+  "planDocumentIds": [
+    "doc-280002551547-49430ae90d9a443d"
+  ],
+  "quality": {
+    "coldReviewCompletedAt": null,
+    "firstPassCompletedAt": null,
+    "readingHours": null,
+    "retestCompletedAt": null,
+    "secondPassCompletedAt": null
+  },
+  "reconciliationStatus": "reconciled",
+  "sourceIds": {
+    "csvCandidateId": "280002551547",
+    "csvElectionCode": "6257",
+    "restCandidateId": "280002551547",
+    "restElectionId": "20322002026"
+  },
+  "sourceObservedAt": "2026-08-15T19:35:53.000Z",
+  "sqCandidate": "280002551547"
+}

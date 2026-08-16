@@ -1,0 +1,157 @@
+import type {
+  SecondaryTagDefinition,
+  SecondaryTagId,
+  ThemeDefinition,
+  ThemeId,
+} from "./contracts";
+
+export const THEMES: readonly ThemeDefinition[] = [
+  {
+    id: "economia-impostos",
+    order: 1,
+    title: "Economia e impostos",
+    shortTitle: "Economia",
+    scope: "Política fiscal, tributação, inflação, juros, dívida pública e câmbio.",
+    boundaryExamples: [],
+    residual: false,
+  },
+  {
+    id: "emprego-renda",
+    order: 2,
+    title: "Emprego e renda",
+    shortTitle: "Emprego e renda",
+    scope: "Mercado de trabalho, salário mínimo, qualificação profissional, empreendedorismo e MEI.",
+    boundaryExamples: [],
+    residual: false,
+  },
+  {
+    id: "saude",
+    order: 3,
+    title: "Saúde",
+    shortTitle: "Saúde",
+    scope: "SUS, financiamento, filas, atenção básica, saúde mental e vigilância sanitária.",
+    boundaryExamples: [],
+    residual: false,
+  },
+  {
+    id: "educacao",
+    order: 4,
+    title: "Educação",
+    shortTitle: "Educação",
+    scope: "Educação básica, superior e técnica, creches, alfabetização, carreira docente e merenda.",
+    boundaryExamples: ["Merenda escolar", "Ensino universitário"],
+    residual: false,
+  },
+  {
+    id: "seguranca-justica",
+    order: 5,
+    title: "Segurança pública e justiça",
+    shortTitle: "Segurança e justiça",
+    scope: "Policiamento, armas, sistema prisional, fronteiras, política de drogas e Judiciário.",
+    boundaryExamples: [],
+    residual: false,
+  },
+  {
+    id: "programas-sociais-habitacao",
+    order: 6,
+    title: "Programas sociais e habitação",
+    shortTitle: "Programas sociais",
+    scope: "Transferência de renda, combate à fome e à pobreza, habitação popular e segurança alimentar.",
+    boundaryExamples: ["Segurança alimentar"],
+    residual: false,
+  },
+  {
+    id: "meio-ambiente-clima",
+    order: 7,
+    title: "Meio ambiente e clima",
+    shortTitle: "Meio ambiente",
+    scope: "Desmatamento, emissões, biodiversidade, política climática e licenciamento ambiental.",
+    boundaryExamples: ["Metas de emissões"],
+    residual: false,
+  },
+  {
+    id: "infraestrutura-energia",
+    order: 8,
+    title: "Infraestrutura e energia",
+    shortTitle: "Infraestrutura",
+    scope: "Transporte, geração e matriz energética, saneamento, telecomunicações e obras.",
+    boundaryExamples: ["Saneamento", "Geração de energia"],
+    residual: false,
+  },
+  {
+    id: "agricultura-agronegocio",
+    order: 9,
+    title: "Agricultura e agronegócio",
+    shortTitle: "Agricultura",
+    scope: "Crédito rural, agricultura familiar, seguro rural, reforma agrária e exportação agropecuária.",
+    boundaryExamples: ["Crédito rural"],
+    residual: false,
+  },
+  {
+    id: "estado-instituicoes",
+    order: 10,
+    title: "Estado e instituições",
+    shortTitle: "Estado e instituições",
+    scope: "Reforma administrativa, combate à corrupção, privatizações e relações entre Poderes.",
+    boundaryExamples: [],
+    residual: false,
+  },
+  {
+    id: "tecnologia-ciencia-inovacao",
+    order: 11,
+    title: "Tecnologia, ciência e inovação",
+    shortTitle: "Ciência e tecnologia",
+    scope: "Digitalização de serviços, inteligência artificial, pesquisa e produção científica universitária.",
+    boundaryExamples: ["Pesquisa universitária"],
+    residual: false,
+  },
+  {
+    id: "politica-externa-defesa",
+    order: 12,
+    title: "Política externa e defesa",
+    shortTitle: "Política externa",
+    scope: "Relações internacionais, comércio exterior, Forças Armadas e soberania.",
+    boundaryExamples: ["Comércio exterior"],
+    residual: false,
+  },
+  {
+    id: "outros-temas",
+    order: 13,
+    title: "Outros temas",
+    shortTitle: "Outros temas",
+    scope: "Tema residual para propostas cujo objeto principal não cabe nos doze temas anteriores.",
+    boundaryExamples: ["Cultura", "Esporte"],
+    residual: true,
+  },
+] as const;
+
+export const SECONDARY_TAGS: readonly SecondaryTagDefinition[] = [
+  { id: "cultura", title: "Cultura", description: "Políticas e ações culturais." },
+  { id: "esporte", title: "Esporte", description: "Prática esportiva e políticas de esporte." },
+  { id: "direitos-humanos", title: "Direitos humanos", description: "Proteção e promoção de direitos humanos." },
+  { id: "igualdade-racial", title: "Igualdade racial", description: "Igualdade racial e combate ao racismo." },
+  { id: "povos-indigenas", title: "Povos indígenas", description: "Direitos e políticas para povos indígenas." },
+  { id: "mulheres-genero", title: "Mulheres e gênero", description: "Direitos das mulheres e políticas de gênero." },
+  {
+    id: "diversidade-sexual-genero",
+    title: "Diversidade sexual e de gênero",
+    description: "Direitos relacionados à orientação sexual e à identidade de gênero.",
+  },
+  {
+    id: "infancia-adolescencia",
+    title: "Infância e adolescência",
+    description: "Direitos e políticas para crianças e adolescentes.",
+  },
+  {
+    id: "pessoas-com-deficiencia",
+    title: "Pessoas com deficiência",
+    description: "Acessibilidade, inclusão e direitos das pessoas com deficiência.",
+  },
+  { id: "pessoas-idosas", title: "Pessoas idosas", description: "Direitos e políticas para pessoas idosas." },
+] as const;
+
+export const THEME_IDS = THEMES.map((theme) => theme.id) as ThemeId[];
+export const SECONDARY_TAG_IDS = SECONDARY_TAGS.map((tag) => tag.id) as SecondaryTagId[];
+
+export const THEME_BY_ID = new Map(THEMES.map((theme) => [theme.id, theme]));
+export const SECONDARY_TAG_BY_ID = new Map(SECONDARY_TAGS.map((tag) => [tag.id, tag]));

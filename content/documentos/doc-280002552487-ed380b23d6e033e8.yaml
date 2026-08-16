@@ -1,0 +1,26 @@
+{
+  "byteSize": 96070,
+  "candidacyId": "280002552487",
+  "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113417",
+  "capturedAt": "2026-08-15T19:35:53.000Z",
+  "id": "doc-280002552487-ed380b23d6e033e8",
+  "mimeType": "application/pdf",
+  "officialFilename": "PCOprogramadegoverno2026.pdf",
+  "pageCount": 7,
+  "pageCountVerified": false,
+  "preservationStatus": "pending_upload",
+  "preservedObjectKey": "pdf/ed380b23d6e033e8616ce71efcf66eb42d2baee2b58f1c9ae80690009c20dfe9.pdf",
+  "preservedPublicUrl": null,
+  "sha256": "ed380b23d6e033e8616ce71efcf66eb42d2baee2b58f1c9ae80690009c20dfe9",
+  "sources": [
+    {
+      "archiveEntry": null,
+      "documentId": "280017113417",
+      "kind": "divulgacand_rest",
+      "observedAt": "2026-08-15T19:35:53.000Z",
+      "resourceId": null,
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113417"
+    }
+  ],
+  "supersedesDocumentId": null
+}

@@ -1,0 +1,34 @@
+{
+  "byteSize": 738999,
+  "candidacyId": "280002541457",
+  "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998007",
+  "capturedAt": "2026-08-15T19:35:53.000Z",
+  "id": "doc-280002541457-1868565fb0d5de77",
+  "mimeType": "application/pdf",
+  "officialFilename": "Programa PSTU EleiAAes 2026.pdf",
+  "pageCount": 8,
+  "pageCountVerified": false,
+  "preservationStatus": "pending_upload",
+  "preservedObjectKey": "pdf/1868565fb0d5de77d40a982a1be07dc7f44f7af7565ee3b40d93b31407d31468.pdf",
+  "preservedPublicUrl": null,
+  "sha256": "1868565fb0d5de77d40a982a1be07dc7f44f7af7565ee3b40d93b31407d31468",
+  "sources": [
+    {
+      "archiveEntry": "BR/2026BR280002541457_01.pdf",
+      "documentId": null,
+      "kind": "ckan_zip",
+      "observedAt": "2026-08-15T06:47:19.000Z",
+      "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+    },
+    {
+      "archiveEntry": null,
+      "documentId": "280016998007",
+      "kind": "divulgacand_rest",
+      "observedAt": "2026-08-15T19:35:53.000Z",
+      "resourceId": null,
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998007"
+    }
+  ],
+  "supersedesDocumentId": null
+}

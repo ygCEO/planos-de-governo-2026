@@ -1,0 +1,201 @@
+{
+  "cadence": "daily",
+  "ckanMetadataModifiedAt": "2026-08-03T19:53:04.109Z",
+  "csvGeneratedAt": "2026-08-15T19:30:10.000Z",
+  "datasetId": "ba2d7d69-5bf5-4379-8c91-664c11f75a2e",
+  "datasetUrl": "https://dadosabertos.tse.jus.br/dataset/candidatos-2026",
+  "licenseId": "cc-by",
+  "observedAt": "2026-08-15T19:35:53.000Z",
+  "reconciliation": {
+    "candidateMetadataMismatches": [],
+    "csvOnlyCandidateIds": [],
+    "currentRestDocumentsMissingFromZip": [
+      "280017113380",
+      "280017113417",
+      "280017119534"
+    ],
+    "restDocumentsMissingFromZip": [
+      "280017113380",
+      "280017113417",
+      "280017119534"
+    ],
+    "restOnlyCandidateIds": [
+      "280002553884"
+    ],
+    "zipDocumentsMissingFromRest": []
+  },
+  "resources": [
+    {
+      "etag": "\"2d2633-6591b0b99cba4\"",
+      "format": "CSV",
+      "id": "7748de82-a23b-47c4-9ec1-35535d945e5b",
+      "lastModified": "2026-08-15T19:35:53.000Z",
+      "name": "Candidatos",
+      "sha256": "c3d13ae50f95024f43046acb4458a4420a620e86526fed665f9e60c8dc6068df",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip"
+    },
+    {
+      "etag": "\"b0e236-659104efa87cc\"",
+      "format": "PDF",
+      "id": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+      "lastModified": "2026-08-15T06:47:19.000Z",
+      "name": "BR - Proposta de governo",
+      "sha256": "13e47bbd0bd0b64398f2a3508e31d1a09b84883bee046165278f3d088a62f5be",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+    }
+  ],
+  "rest": {
+    "candidateIds": [
+      "280002538811",
+      "280002539826",
+      "280002540694",
+      "280002541457",
+      "280002542548",
+      "280002548139",
+      "280002551544",
+      "280002551547",
+      "280002551932",
+      "280002551975",
+      "280002552484",
+      "280002552487",
+      "280002553884"
+    ],
+    "electionId": "20322002026",
+    "observedAt": "2026-08-15T19:35:53.000Z",
+    "planDocuments": [
+      {
+        "byteSize": 1431032,
+        "candidacyId": "280002538811",
+        "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017119534",
+        "documentId": "280017119534",
+        "lastModified": null,
+        "officialFilename": "pje-ProgramaSAMARA_02 (1).pdf",
+        "position": 0,
+        "sha256": "23c510d5b06bb149bb9390bbc144dcda9cfd2b6a677a854b3d993b16ed7a94e6"
+      },
+      {
+        "byteSize": 102070,
+        "candidacyId": "280002538811",
+        "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998025",
+        "documentId": "280016998025",
+        "lastModified": null,
+        "officialFilename": "pje-PROGRAMA SAMARA MARTINS AGOSTO 2026.pdf",
+        "position": 1,
+        "sha256": "2caad1effa29c6a8d602b89f4f1accf086eca3fc793e03c085d58f265a5d3049"
+      },
+      {
+        "byteSize": 882639,
+        "candidacyId": "280002539826",
+        "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
+        "documentId": "280016919931",
+        "lastModified": null,
+        "officialFilename": "planogoverno10120.pdf",
+        "position": 0,
+        "sha256": "5a5804622017a8e9c123fb64540a5ee3d06009de681026b505bc2a152d5e646e"
+      },
+      {
+        "byteSize": 1691345,
+        "candidacyId": "280002540694",
+        "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789",
+        "documentId": "280017002789",
+        "lastModified": null,
+        "officialFilename": "Plano de Governo Missao 2026  Finalcompressed.pdf",
+        "position": 0,
+        "sha256": "cdece60b71117c7820dbf90a7d795f76f3b1d1aaa5ebb8ce11f47e9ca6227b5a"
+      },
+      {
+        "byteSize": 738999,
+        "candidacyId": "280002541457",
+        "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998007",
+        "documentId": "280016998007",
+        "lastModified": null,
+        "officialFilename": "Programa PSTU EleiAAes 2026.pdf",
+        "position": 0,
+        "sha256": "1868565fb0d5de77d40a982a1be07dc7f44f7af7565ee3b40d93b31407d31468"
+      },
+      {
+        "byteSize": 1189907,
+        "candidacyId": "280002542548",
+        "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017016005",
+        "documentId": "280017016005",
+        "lastModified": null,
+        "officialFilename": "0806JOB838PTlivroplanodegovernocompressed.pdf",
+        "position": 0,
+        "sha256": "e1c162c20c81dafadf69b10bab230b5a6dc48f6b6c27c2cfce853b131a8bcc36"
+      },
+      {
+        "byteSize": 1612696,
+        "candidacyId": "280002548139",
+        "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017075366",
+        "documentId": "280017075366",
+        "lastModified": null,
+        "officialFilename": "Brasil em Primeiro Lugar.pdf",
+        "position": 0,
+        "sha256": "df2acdb7a6d8b080d6d8a235b8fe8f0d987bf0f24be4f4aa9abc80e4ebb24904"
+      },
+      {
+        "byteSize": 1940855,
+        "candidacyId": "280002551544",
+        "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104726",
+        "documentId": "280017104726",
+        "lastModified": null,
+        "officialFilename": "DiretrizesPlanodeGovernoFlavioBolsonaro20272030versaofinal.pdf",
+        "position": 0,
+        "sha256": "7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4"
+      },
+      {
+        "byteSize": 1953868,
+        "candidacyId": "280002551547",
+        "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104778",
+        "documentId": "280017104778",
+        "lastModified": null,
+        "officialFilename": "PLANO DE GOVERNOO BRASIL DOS NOSSOS SONHOS.pdf",
+        "position": 0,
+        "sha256": "49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605"
+      },
+      {
+        "byteSize": 1000707,
+        "candidacyId": "280002551932",
+        "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+        "documentId": "280017106566",
+        "lastModified": null,
+        "officialFilename": "Plano de Governo Ronaldo Caiado Presidente.pdf",
+        "position": 0,
+        "sha256": "b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415"
+      },
+      {
+        "byteSize": 314957,
+        "candidacyId": "280002551975",
+        "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017107286",
+        "documentId": "280017107286",
+        "lastModified": null,
+        "officialFilename": "Programa Politico do PCB eleicoes 20261.pdf",
+        "position": 0,
+        "sha256": "52f765533f93409a595d780e9ad8634de72db8f05794a2e70e808913c2ed4dff"
+      },
+      {
+        "byteSize": 64568,
+        "candidacyId": "280002552484",
+        "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113380",
+        "documentId": "280017113380",
+        "lastModified": null,
+        "officialFilename": "PLANO DE GOVERNO.pdf",
+        "position": 0,
+        "sha256": "6390152c66285558ecd5459f4f73f3f65650beb77022b14e7750190b1b536d68"
+      },
+      {
+        "byteSize": 96070,
+        "candidacyId": "280002552487",
+        "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113417",
+        "documentId": "280017113417",
+        "lastModified": null,
+        "officialFilename": "PCOprogramadegoverno2026.pdf",
+        "position": 0,
+        "sha256": "ed380b23d6e033e8616ce71efcf66eb42d2baee2b58f1c9ae80690009c20dfe9"
+      }
+    ],
+    "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/listar/2026/BR/20322002026/1/candidatos"
+  },
+  "syncSignature": "fbd56142c7bf2f11f9f24a562f317fc4a5576760987c93bf0a05400d8d8cffd1",
+  "syncSignatureVersion": "semantic-v2"
+}

@@ -1,0 +1,420 @@
+[
+  {
+    "byteSize": 64568,
+    "candidacyId": "280002552484",
+    "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113380",
+    "capturedAt": "2026-08-15T19:35:53.000Z",
+    "id": "doc-280002552484-6390152c66285558",
+    "mimeType": "application/pdf",
+    "officialFilename": "PLANO DE GOVERNO.pdf",
+    "pageCount": null,
+    "pageCountVerified": false,
+    "preservationStatus": "pending_upload",
+    "preservedObjectKey": "pdf/6390152c66285558ecd5459f4f73f3f65650beb77022b14e7750190b1b536d68.pdf",
+    "preservedPublicUrl": null,
+    "sha256": "6390152c66285558ecd5459f4f73f3f65650beb77022b14e7750190b1b536d68",
+    "sources": [
+      {
+        "archiveEntry": null,
+        "documentId": "280017113380",
+        "kind": "divulgacand_rest",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "resourceId": null,
+        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113380"
+      }
+    ],
+    "supersedesDocumentId": null
+  },
+  {
+    "byteSize": 314957,
+    "candidacyId": "280002551975",
+    "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017107286",
+    "capturedAt": "2026-08-15T19:35:53.000Z",
+    "id": "doc-280002551975-52f765533f93409a",
+    "mimeType": "application/pdf",
+    "officialFilename": "Programa Politico do PCB eleicoes 20261.pdf",
+    "pageCount": null,
+    "pageCountVerified": false,
+    "preservationStatus": "pending_upload",
+    "preservedObjectKey": "pdf/52f765533f93409a595d780e9ad8634de72db8f05794a2e70e808913c2ed4dff.pdf",
+    "preservedPublicUrl": null,
+    "sha256": "52f765533f93409a595d780e9ad8634de72db8f05794a2e70e808913c2ed4dff",
+    "sources": [
+      {
+        "archiveEntry": "BR/2026BR280002551975_01.pdf",
+        "documentId": null,
+        "kind": "ckan_zip",
+        "observedAt": "2026-08-15T06:47:19.000Z",
+        "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+      },
+      {
+        "archiveEntry": null,
+        "documentId": "280017107286",
+        "kind": "divulgacand_rest",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "resourceId": null,
+        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017107286"
+      }
+    ],
+    "supersedesDocumentId": null
+  },
+  {
+    "byteSize": 1953868,
+    "candidacyId": "280002551547",
+    "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104778",
+    "capturedAt": "2026-08-15T19:35:53.000Z",
+    "id": "doc-280002551547-49430ae90d9a443d",
+    "mimeType": "application/pdf",
+    "officialFilename": "PLANO DE GOVERNOO BRASIL DOS NOSSOS SONHOS.pdf",
+    "pageCount": 200,
+    "pageCountVerified": false,
+    "preservationStatus": "pending_upload",
+    "preservedObjectKey": "pdf/49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605.pdf",
+    "preservedPublicUrl": null,
+    "sha256": "49430ae90d9a443d6e5b2a88d826ef012c94f6773229863ff04f412915207605",
+    "sources": [
+      {
+        "archiveEntry": "BR/2026BR280002551547_01.pdf",
+        "documentId": null,
+        "kind": "ckan_zip",
+        "observedAt": "2026-08-15T06:47:19.000Z",
+        "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+      },
+      {
+        "archiveEntry": null,
+        "documentId": "280017104778",
+        "kind": "divulgacand_rest",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "resourceId": null,
+        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104778"
+      }
+    ],
+    "supersedesDocumentId": null
+  },
+  {
+    "byteSize": 1940855,
+    "candidacyId": "280002551544",
+    "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104726",
+    "capturedAt": "2026-08-15T19:35:53.000Z",
+    "id": "doc-280002551544-7d1d95075e11e3c4",
+    "mimeType": "application/pdf",
+    "officialFilename": "DiretrizesPlanodeGovernoFlavioBolsonaro20272030versaofinal.pdf",
+    "pageCount": null,
+    "pageCountVerified": false,
+    "preservationStatus": "pending_upload",
+    "preservedObjectKey": "pdf/7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4.pdf",
+    "preservedPublicUrl": null,
+    "sha256": "7d1d95075e11e3c4113e8dcd502438049a34f5147a84cb0f746bf59046e477a4",
+    "sources": [
+      {
+        "archiveEntry": "BR/2026BR280002551544_01.pdf",
+        "documentId": null,
+        "kind": "ckan_zip",
+        "observedAt": "2026-08-15T06:47:19.000Z",
+        "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+      },
+      {
+        "archiveEntry": null,
+        "documentId": "280017104726",
+        "kind": "divulgacand_rest",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "resourceId": null,
+        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104726"
+      }
+    ],
+    "supersedesDocumentId": null
+  },
+  {
+    "byteSize": 738999,
+    "candidacyId": "280002541457",
+    "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998007",
+    "capturedAt": "2026-08-15T19:35:53.000Z",
+    "id": "doc-280002541457-1868565fb0d5de77",
+    "mimeType": "application/pdf",
+    "officialFilename": "Programa PSTU EleiAAes 2026.pdf",
+    "pageCount": 8,
+    "pageCountVerified": false,
+    "preservationStatus": "pending_upload",
+    "preservedObjectKey": "pdf/1868565fb0d5de77d40a982a1be07dc7f44f7af7565ee3b40d93b31407d31468.pdf",
+    "preservedPublicUrl": null,
+    "sha256": "1868565fb0d5de77d40a982a1be07dc7f44f7af7565ee3b40d93b31407d31468",
+    "sources": [
+      {
+        "archiveEntry": "BR/2026BR280002541457_01.pdf",
+        "documentId": null,
+        "kind": "ckan_zip",
+        "observedAt": "2026-08-15T06:47:19.000Z",
+        "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+      },
+      {
+        "archiveEntry": null,
+        "documentId": "280016998007",
+        "kind": "divulgacand_rest",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "resourceId": null,
+        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998007"
+      }
+    ],
+    "supersedesDocumentId": null
+  },
+  {
+    "byteSize": 1189907,
+    "candidacyId": "280002542548",
+    "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017016005",
+    "capturedAt": "2026-08-15T19:35:53.000Z",
+    "id": "doc-280002542548-e1c162c20c81dafa",
+    "mimeType": "application/pdf",
+    "officialFilename": "0806JOB838PTlivroplanodegovernocompressed.pdf",
+    "pageCount": 84,
+    "pageCountVerified": false,
+    "preservationStatus": "pending_upload",
+    "preservedObjectKey": "pdf/e1c162c20c81dafadf69b10bab230b5a6dc48f6b6c27c2cfce853b131a8bcc36.pdf",
+    "preservedPublicUrl": null,
+    "sha256": "e1c162c20c81dafadf69b10bab230b5a6dc48f6b6c27c2cfce853b131a8bcc36",
+    "sources": [
+      {
+        "archiveEntry": "BR/2026BR280002542548_01.pdf",
+        "documentId": null,
+        "kind": "ckan_zip",
+        "observedAt": "2026-08-15T06:47:19.000Z",
+        "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+      },
+      {
+        "archiveEntry": null,
+        "documentId": "280017016005",
+        "kind": "divulgacand_rest",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "resourceId": null,
+        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017016005"
+      }
+    ],
+    "supersedesDocumentId": null
+  },
+  {
+    "byteSize": 1691345,
+    "candidacyId": "280002540694",
+    "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789",
+    "capturedAt": "2026-08-15T19:35:53.000Z",
+    "id": "doc-280002540694-cdece60b71117c78",
+    "mimeType": "application/pdf",
+    "officialFilename": "Plano de Governo Missao 2026  Finalcompressed.pdf",
+    "pageCount": 51,
+    "pageCountVerified": false,
+    "preservationStatus": "pending_upload",
+    "preservedObjectKey": "pdf/cdece60b71117c7820dbf90a7d795f76f3b1d1aaa5ebb8ce11f47e9ca6227b5a.pdf",
+    "preservedPublicUrl": null,
+    "sha256": "cdece60b71117c7820dbf90a7d795f76f3b1d1aaa5ebb8ce11f47e9ca6227b5a",
+    "sources": [
+      {
+        "archiveEntry": "BR/2026BR280002540694_01.pdf",
+        "documentId": null,
+        "kind": "ckan_zip",
+        "observedAt": "2026-08-15T06:47:19.000Z",
+        "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+      },
+      {
+        "archiveEntry": null,
+        "documentId": "280017002789",
+        "kind": "divulgacand_rest",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "resourceId": null,
+        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789"
+      }
+    ],
+    "supersedesDocumentId": null
+  },
+  {
+    "byteSize": 1000707,
+    "candidacyId": "280002551932",
+    "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+    "capturedAt": "2026-08-15T19:35:53.000Z",
+    "id": "doc-280002551932-b0ba46eb58d1827c",
+    "mimeType": "application/pdf",
+    "officialFilename": "Plano de Governo Ronaldo Caiado Presidente.pdf",
+    "pageCount": 100,
+    "pageCountVerified": false,
+    "preservationStatus": "pending_upload",
+    "preservedObjectKey": "pdf/b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415.pdf",
+    "preservedPublicUrl": null,
+    "sha256": "b0ba46eb58d1827c99167a0df60e539b6bfa8a70fa247e4653ba2fcca8ade415",
+    "sources": [
+      {
+        "archiveEntry": "BR/2026BR280002551932_01.pdf",
+        "documentId": null,
+        "kind": "ckan_zip",
+        "observedAt": "2026-08-15T06:47:19.000Z",
+        "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+      },
+      {
+        "archiveEntry": null,
+        "documentId": "280017106566",
+        "kind": "divulgacand_rest",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "resourceId": null,
+        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566"
+      }
+    ],
+    "supersedesDocumentId": null
+  },
+  {
+    "byteSize": 96070,
+    "candidacyId": "280002552487",
+    "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113417",
+    "capturedAt": "2026-08-15T19:35:53.000Z",
+    "id": "doc-280002552487-ed380b23d6e033e8",
+    "mimeType": "application/pdf",
+    "officialFilename": "PCOprogramadegoverno2026.pdf",
+    "pageCount": 7,
+    "pageCountVerified": false,
+    "preservationStatus": "pending_upload",
+    "preservedObjectKey": "pdf/ed380b23d6e033e8616ce71efcf66eb42d2baee2b58f1c9ae80690009c20dfe9.pdf",
+    "preservedPublicUrl": null,
+    "sha256": "ed380b23d6e033e8616ce71efcf66eb42d2baee2b58f1c9ae80690009c20dfe9",
+    "sources": [
+      {
+        "archiveEntry": null,
+        "documentId": "280017113417",
+        "kind": "divulgacand_rest",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "resourceId": null,
+        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017113417"
+      }
+    ],
+    "supersedesDocumentId": null
+  },
+  {
+    "byteSize": 1431032,
+    "candidacyId": "280002538811",
+    "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017119534",
+    "capturedAt": "2026-08-15T19:35:53.000Z",
+    "id": "doc-280002538811-23c510d5b06bb149",
+    "mimeType": "application/pdf",
+    "officialFilename": "pje-ProgramaSAMARA_02 (1).pdf",
+    "pageCount": 42,
+    "pageCountVerified": false,
+    "preservationStatus": "pending_upload",
+    "preservedObjectKey": "pdf/23c510d5b06bb149bb9390bbc144dcda9cfd2b6a677a854b3d993b16ed7a94e6.pdf",
+    "preservedPublicUrl": null,
+    "sha256": "23c510d5b06bb149bb9390bbc144dcda9cfd2b6a677a854b3d993b16ed7a94e6",
+    "sources": [
+      {
+        "archiveEntry": null,
+        "documentId": "280017119534",
+        "kind": "divulgacand_rest",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "resourceId": null,
+        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017119534"
+      }
+    ],
+    "supersedesDocumentId": null
+  },
+  {
+    "byteSize": 102070,
+    "candidacyId": "280002538811",
+    "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998025",
+    "capturedAt": "2026-08-15T19:35:53.000Z",
+    "id": "doc-280002538811-2caad1effa29c6a8",
+    "mimeType": "application/pdf",
+    "officialFilename": "pje-PROGRAMA SAMARA MARTINS AGOSTO 2026.pdf",
+    "pageCount": null,
+    "pageCountVerified": false,
+    "preservationStatus": "pending_upload",
+    "preservedObjectKey": "pdf/2caad1effa29c6a8d602b89f4f1accf086eca3fc793e03c085d58f265a5d3049.pdf",
+    "preservedPublicUrl": null,
+    "sha256": "2caad1effa29c6a8d602b89f4f1accf086eca3fc793e03c085d58f265a5d3049",
+    "sources": [
+      {
+        "archiveEntry": "BR/2026BR280002538811_01.pdf",
+        "documentId": null,
+        "kind": "ckan_zip",
+        "observedAt": "2026-08-15T06:47:19.000Z",
+        "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+      },
+      {
+        "archiveEntry": null,
+        "documentId": "280016998025",
+        "kind": "divulgacand_rest",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "resourceId": null,
+        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998025"
+      }
+    ],
+    "supersedesDocumentId": null
+  },
+  {
+    "byteSize": 1612696,
+    "candidacyId": "280002548139",
+    "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017075366",
+    "capturedAt": "2026-08-15T19:35:53.000Z",
+    "id": "doc-280002548139-df2acdb7a6d8b080",
+    "mimeType": "application/pdf",
+    "officialFilename": "Brasil em Primeiro Lugar.pdf",
+    "pageCount": 58,
+    "pageCountVerified": false,
+    "preservationStatus": "pending_upload",
+    "preservedObjectKey": "pdf/df2acdb7a6d8b080d6d8a235b8fe8f0d987bf0f24be4f4aa9abc80e4ebb24904.pdf",
+    "preservedPublicUrl": null,
+    "sha256": "df2acdb7a6d8b080d6d8a235b8fe8f0d987bf0f24be4f4aa9abc80e4ebb24904",
+    "sources": [
+      {
+        "archiveEntry": "BR/2026BR280002548139_01.pdf",
+        "documentId": null,
+        "kind": "ckan_zip",
+        "observedAt": "2026-08-15T06:47:19.000Z",
+        "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+      },
+      {
+        "archiveEntry": null,
+        "documentId": "280017075366",
+        "kind": "divulgacand_rest",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "resourceId": null,
+        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017075366"
+      }
+    ],
+    "supersedesDocumentId": null
+  },
+  {
+    "byteSize": 882639,
+    "candidacyId": "280002539826",
+    "canonicalUrl": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
+    "capturedAt": "2026-08-15T19:35:53.000Z",
+    "id": "doc-280002539826-5a5804622017a8e9",
+    "mimeType": "application/pdf",
+    "officialFilename": "planogoverno10120.pdf",
+    "pageCount": 31,
+    "pageCountVerified": false,
+    "preservationStatus": "pending_upload",
+    "preservedObjectKey": "pdf/5a5804622017a8e9c123fb64540a5ee3d06009de681026b505bc2a152d5e646e.pdf",
+    "preservedPublicUrl": null,
+    "sha256": "5a5804622017a8e9c123fb64540a5ee3d06009de681026b505bc2a152d5e646e",
+    "sources": [
+      {
+        "archiveEntry": "BR/2026BR280002539826_01.pdf",
+        "documentId": null,
+        "kind": "ckan_zip",
+        "observedAt": "2026-08-15T06:47:19.000Z",
+        "resourceId": "433ac1f4-07dc-44a2-bcbe-c87a2073721a",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+      },
+      {
+        "archiveEntry": null,
+        "documentId": "280016919931",
+        "kind": "divulgacand_rest",
+        "observedAt": "2026-08-15T19:35:53.000Z",
+        "resourceId": null,
+        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931"
+      }
+    ],
+    "supersedesDocumentId": null
+  }
+]
