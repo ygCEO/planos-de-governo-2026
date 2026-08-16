@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Obter o repositório
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Preparar Node.js
         uses: actions/setup-node@v4

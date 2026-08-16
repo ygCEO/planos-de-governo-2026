@@ -35,6 +35,7 @@ test("CI aplica validação, reprodução, lint, build e testes com privilégios
   const packageJson = JSON.parse(packageDocument);
 
   assert.match(workflow, /permissions:\s*\n\s+contents: read/);
+  assert.match(workflow, /actions\/checkout@v4\s*\n\s+with:\s*\n\s+fetch-depth: 0/);
   assert.match(workflow, /timeout-minutes:\s*20/);
   assert.match(workflow, /npm ci --ignore-scripts/);
   assert.match(workflow, /npm audit --audit-level=high/);
@@ -210,6 +211,7 @@ test("formulário de correção exige fonte, página e confirmação de privacid
 test("preservação usa o binding gerenciado pelo Sites e abre mudança revisável", async () => {
   const workflow = await read(".github/workflows/preserve-pdfs.yml");
 
+  assert.match(workflow, /actions\/checkout@v4\s*\n\s+with:\s*\n\s+fetch-depth: 0/);
   assert.match(workflow, /default: true\s*\n\s*type: boolean/);
   assert.match(workflow, /PDF_UPLOAD_ORIGIN: \$\{\{ vars\.PDF_UPLOAD_ORIGIN \}\}/);
   assert.match(workflow, /PDF_UPLOAD_TOKEN: \$\{\{ secrets\.PDF_UPLOAD_TOKEN \}\}/);

@@ -44,6 +44,14 @@ test("empacotador produz o contrato exigido pelo Sites", async (t) => {
   const { root, hosting } = await fixture(t);
   const archive = path.join(root, "planos-de-governo-sites-2026-08-15.7.tar.gz");
   const secondArchive = path.join(root, "planos-de-governo-sites-2026-08-15.7-second.tar.gz");
+  const longRelativePath = path.join(
+    "dist",
+    "server",
+    ...Array.from({ length: 6 }, (_, index) => `segmento-${index}-${"x".repeat(40)}`),
+    "artefato.js",
+  );
+  await mkdir(path.join(root, path.dirname(longRelativePath)), { recursive: true });
+  await writeFile(path.join(root, longRelativePath), "export const caminhoLongo = true;\n");
   await execFileAsync("bash", [packageScript, root, archive]);
   await writeFile(path.join(root, "dist/server/index.js"), "export default {};\n");
   await execFileAsync("bash", [packageScript, root, secondArchive]);
@@ -53,11 +61,17 @@ test("empacotador produz o contrato exigido pelo Sites", async (t) => {
   const { stdout: entries } = await execFileAsync("tar", ["-tzf", archive]);
   assert.match(entries, /^dist\/server\/index\.js$/m);
   assert.match(entries, /^dist\/\.openai\/hosting\.json$/m);
+  assert.ok(entries.split("\n").includes(longRelativePath.split(path.sep).join("/")));
   const { stdout: archivedHosting } = await execFileAsync(
     "tar",
     ["-xOzf", archive, "dist/.openai/hosting.json"],
   );
   assert.deepEqual(JSON.parse(archivedHosting), hosting);
+  const { stdout: longArtifact } = await execFileAsync(
+    "tar",
+    ["-xOzf", archive, longRelativePath.split(path.sep).join("/")],
+  );
+  assert.equal(longArtifact, "export const caminhoLongo = true;\n");
 });
 
 test("handoff vincula bundle, manifesto, metodologia, tag e commit exatos", async (t) => {

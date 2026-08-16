@@ -30,7 +30,7 @@ function splitTarPath(pathname) {
   throw new Error(`caminho longo demais para ustar: ${pathname}`);
 }
 
-function tarHeader({ pathname, size, directory }) {
+function tarHeader({ pathname, size, directory, typeflag }) {
   const header = Buffer.alloc(BLOCK_SIZE);
   const { name, prefix } = splitTarPath(pathname);
   writeString(header, 0, 100, name);
@@ -40,7 +40,7 @@ function tarHeader({ pathname, size, directory }) {
   writeOctal(header, 124, 12, size);
   writeOctal(header, 136, 12, 0);
   header.fill(0x20, 148, 156);
-  writeString(header, 156, 1, directory ? "5" : "0");
+  writeString(header, 156, 1, typeflag ?? (directory ? "5" : "0"));
   writeString(header, 257, 6, "ustar\0");
   writeString(header, 263, 2, "00");
   writeString(header, 265, 32, "root");
@@ -52,6 +52,38 @@ function tarHeader({ pathname, size, directory }) {
   const encodedChecksum = checksum.toString(8).padStart(6, "0");
   writeString(header, 148, 8, `${encodedChecksum}\0 `);
   return header;
+}
+
+function appendPayload(chunks, bytes) {
+  chunks.push(bytes);
+  const padding = (BLOCK_SIZE - (bytes.length % BLOCK_SIZE)) % BLOCK_SIZE;
+  if (padding) chunks.push(Buffer.alloc(padding));
+}
+
+function appendEntry(chunks, entry, index) {
+  let headerPathname = entry.pathname;
+  try {
+    splitTarPath(headerPathname);
+  } catch (error) {
+    if (!String(error.message).startsWith("caminho longo demais para ustar:")) throw error;
+
+    const longName = Buffer.from(`${entry.pathname}\0`, "utf8");
+    chunks.push(tarHeader({
+      pathname: "././@LongLink",
+      size: longName.length,
+      directory: false,
+      typeflag: "L",
+    }));
+    appendPayload(chunks, longName);
+    headerPathname = `long-path-${String(index).padStart(8, "0")}${entry.directory ? "/" : ""}`;
+  }
+
+  chunks.push(tarHeader({
+    pathname: headerPathname,
+    size: entry.bytes.length,
+    directory: entry.directory,
+  }));
+  if (!entry.directory) appendPayload(chunks, entry.bytes);
 }
 
 async function collectEntries(root, relative = "") {
@@ -80,14 +112,11 @@ export async function createDeterministicTarGz({ source, archive }) {
   const resolvedSource = resolve(source);
   const entries = await collectEntries(resolvedSource);
   const chunks = [];
-  for (const entry of entries) {
-    const pathname = entry.pathname.split(sep).join(posix.sep);
-    chunks.push(tarHeader({ pathname, size: entry.bytes.length, directory: entry.directory }));
-    if (!entry.directory) {
-      chunks.push(entry.bytes);
-      const padding = (BLOCK_SIZE - (entry.bytes.length % BLOCK_SIZE)) % BLOCK_SIZE;
-      if (padding) chunks.push(Buffer.alloc(padding));
-    }
+  for (const [index, entry] of entries.entries()) {
+    appendEntry(chunks, {
+      ...entry,
+      pathname: entry.pathname.split(sep).join(posix.sep),
+    }, index);
   }
   chunks.push(Buffer.alloc(BLOCK_SIZE * 2));
   const compressed = gzipSync(Buffer.concat(chunks), { level: 9, mtime: 0 });
