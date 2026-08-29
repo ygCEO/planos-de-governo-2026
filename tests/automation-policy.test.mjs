@@ -65,7 +65,7 @@ test("monitor transiciona as três cadências com estado auditável e sem dados 
 
   assert.match(workflow, /TSE_MONITOR_CADENCE/);
   assert.match(workflow, /Estado automático do monitor TSE/);
-  assert.match(workflow, /item\.author\?\.login === "github-actions\[bot\]"/);
+  assert.match(workflow, /new Set\(\["app\/github-actions", "github-actions\[bot\]"\]\)/);
   assert.match(workflow, /tse-monitor-state\.mjs context/);
   assert.match(workflow, /--has-divergence "\$HAS_DIVERGENCE"/);
   assert.match(workflow, /--has-pending-official-status "\$HAS_PENDING_OFFICIAL_STATUS"/);
@@ -116,6 +116,7 @@ test("busca da issue de estado entrega o título em um único argumento", async 
   assert.ok(searchIndex >= 0);
   assert.equal(args[searchIndex + 1], "Estado automático do monitor TSE in:title");
   assert.equal(args[searchIndex + 2], "--limit");
+  assert.equal(args[searchIndex + 3], "1000");
 });
 
 test("gate real inicializa a issue e ativa somente a agenda horária", async (t) => {
@@ -158,6 +159,114 @@ test("gate real inicializa a issue e ativa somente a agenda horária", async (t)
   assert.match(outputs, /^issue_number=42$/m);
 });
 
+test("gate reutiliza a issue canônica criada pelo GitHub Actions", async (t) => {
+  const workflow = await read(".github/workflows/tse-monitor.yml");
+  const runBlock = workflowRunBlock(workflow, "Recuperar estado auditável e selecionar a agenda");
+  const projectRoot = fileURLToPath(new URL("..", import.meta.url));
+  const temporaryRoot = await mkdtemp(path.join(os.tmpdir(), "planos-state-existing-"));
+  t.after(() => rm(temporaryRoot, { recursive: true, force: true }));
+  const output = path.join(temporaryRoot, "github-output.txt");
+  const issueBody = path.join(temporaryRoot, "issue.md");
+  const script = path.join(temporaryRoot, "gate.sh");
+  await writeFile(issueBody, [
+    "<!-- tse-monitor-state:v1 -->",
+    "# Estado automático do monitor TSE",
+    "",
+    "```json",
+    JSON.stringify({
+      schemaVersion: 1,
+      cadence: "hourly",
+      stableSince: null,
+      lastCheckAt: null,
+      lastChangeAt: null,
+      lastResult: "unknown",
+      hasDivergence: false,
+      hasPendingOfficialStatus: false,
+    }, null, 2),
+    "```",
+    "",
+  ].join("\n"));
+  await writeFile(
+    script,
+    [
+      "gh() {",
+      "  if [[ \"$1 $2\" == \"issue list\" ]]; then",
+      "    printf '%s' '[{\"number\":309,\"title\":\"Estado automático do monitor TSE\",\"state\":\"OPEN\",\"author\":{\"login\":\"app/github-actions\"}},{\"number\":1,\"title\":\"Estado automático do monitor TSE\",\"state\":\"OPEN\",\"author\":{\"login\":\"app/github-actions\"}}]'",
+      "    return",
+      "  fi",
+      "  if [[ \"$1 $2\" == \"issue view\" ]]; then command cat \"$ISSUE_BODY_FIXTURE\"; return; fi",
+      "  return 91",
+      "}",
+      runBlock,
+    ].join("\n"),
+  );
+  await execFileAsync("bash", [script], {
+    cwd: projectRoot,
+    env: {
+      ...process.env,
+      RUNNER_TEMP: temporaryRoot,
+      GITHUB_OUTPUT: output,
+      ISSUE_BODY_FIXTURE: issueBody,
+      EVENT_NAME: "schedule",
+      SCHEDULE: "17 * * * *",
+      MANUAL_CADENCE: "automatic",
+      BOOTSTRAP_CADENCE: "hourly",
+      HAS_DIVERGENCE: "false",
+      HAS_PENDING_OFFICIAL_STATUS: "false",
+      STATE_TITLE: "Estado automático do monitor TSE",
+    },
+  });
+  const outputs = await readFile(output, "utf8");
+  assert.match(outputs, /^issue_number=1$/m);
+});
+
+test("monitor trata diferença oficial como resultado esperado antes da falha editorial", async (t) => {
+  const workflow = await read(".github/workflows/tse-monitor.yml");
+  const runBlock = workflowRunBlock(workflow, "Consultar fontes oficiais sem alterar conteúdo editorial");
+  const temporaryRoot = await mkdtemp(path.join(os.tmpdir(), "planos-source-change-"));
+  t.after(() => rm(temporaryRoot, { recursive: true, force: true }));
+  const output = path.join(temporaryRoot, "github-output.txt");
+  const summary = path.join(temporaryRoot, "github-summary.md");
+  const script = path.join(temporaryRoot, "check.sh");
+  await writeFile(script, [
+    "node() { printf '%s\\n' 'TSE_CHANGED: diferença controlada' >&2; return 2; }",
+    runBlock,
+  ].join("\n"));
+  await execFileAsync("bash", [script], {
+    env: {
+      ...process.env,
+      GITHUB_OUTPUT: output,
+      GITHUB_STEP_SUMMARY: summary,
+      TSE_MONITOR_CADENCE: "hourly",
+    },
+  });
+  assert.match(await readFile(output, "utf8"), /^changed=true$/m);
+  assert.match(await readFile(summary, "utf8"), /Alteração oficial detectada/);
+});
+
+test("monitor preserva o diagnóstico de erro inesperado da fonte", async (t) => {
+  const workflow = await read(".github/workflows/tse-monitor.yml");
+  const runBlock = workflowRunBlock(workflow, "Consultar fontes oficiais sem alterar conteúdo editorial");
+  const temporaryRoot = await mkdtemp(path.join(os.tmpdir(), "planos-source-error-"));
+  t.after(() => rm(temporaryRoot, { recursive: true, force: true }));
+  const script = path.join(temporaryRoot, "check.sh");
+  await writeFile(script, [
+    "node() { printf '%s\\n' 'TSE_SYNC_ERROR: falha controlada' >&2; return 1; }",
+    runBlock,
+  ].join("\n"));
+  await assert.rejects(
+    execFileAsync("bash", [script], {
+      env: {
+        ...process.env,
+        GITHUB_OUTPUT: path.join(temporaryRoot, "github-output.txt"),
+        GITHUB_STEP_SUMMARY: path.join(temporaryRoot, "github-summary.md"),
+        TSE_MONITOR_CADENCE: "hourly",
+      },
+    }),
+    (error) => error.code === 1 && /TSE_SYNC_ERROR: falha controlada/.test(error.stderr),
+  );
+});
+
 test("deduplicação do alerta entrega a busca do gh em um único argumento", async (t) => {
   const workflow = await read(".github/workflows/tse-monitor.yml");
   const commandLine = workflow
@@ -187,6 +296,35 @@ test("deduplicação do alerta entrega a busca do gh em um único argumento", as
   assert.ok(searchIndex >= 0);
   assert.equal(args[searchIndex + 1], "Monitoramento TSE detectou alteração oficial in:title");
   assert.equal(args[searchIndex + 2], "--limit");
+  assert.equal(args[searchIndex + 3], "1000");
+});
+
+test("alerta editorial reconhece autoria normalizada do GitHub Actions", async (t) => {
+  const workflow = await read(".github/workflows/tse-monitor.yml");
+  const runBlock = workflowRunBlock(workflow, "Abrir alerta editorial sem expor dados brutos");
+  const temporaryRoot = await mkdtemp(path.join(os.tmpdir(), "planos-alert-existing-"));
+  t.after(() => rm(temporaryRoot, { recursive: true, force: true }));
+  const summary = path.join(temporaryRoot, "github-summary.md");
+  const script = path.join(temporaryRoot, "alert.sh");
+  await writeFile(script, [
+    "gh() {",
+    "  if [[ \"$1 $2\" == \"issue list\" ]]; then",
+    "    printf '%s' '[{\"number\":88,\"title\":\"Monitoramento TSE detectou alteração oficial\",\"author\":{\"login\":\"app/github-actions\"}}]'",
+    "    return",
+    "  fi",
+    "  return 91",
+    "}",
+    runBlock,
+  ].join("\n"));
+  await execFileAsync("bash", [script], {
+    env: {
+      ...process.env,
+      GITHUB_STEP_SUMMARY: summary,
+      RUN_URL: "https://github.test/o/r/actions/runs/1",
+      CADENCE: "hourly",
+    },
+  });
+  assert.match(await readFile(summary, "utf8"), /alerta #88 já está aberto/);
 });
 
 test("formulário de correção exige fonte, página e confirmação de privacidade", async () => {
