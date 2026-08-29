@@ -63,10 +63,13 @@ jobs:
           set -euo pipefail
           state_file="$RUNNER_TEMP/tse-monitor-state.json"
           body_file="$RUNNER_TEMP/tse-monitor-state.md"
-          issues_json="$(gh issue list --state all --search "$STATE_TITLE in:title" --limit 100 --json number,title,state,author)"
+          issues_json="$(gh issue list --state all --search "$STATE_TITLE in:title" --limit 1000 --json number,title,state,author)"
           issue_record="$(ISSUES_JSON="$issues_json" STATE_TITLE="$STATE_TITLE" node -e '
             const issues = JSON.parse(process.env.ISSUES_JSON);
-            const issue = issues.find((item) => item.title === process.env.STATE_TITLE && item.author?.login === "github-actions[bot]");
+            const botLogins = new Set(["app/github-actions", "github-actions[bot]"]);
+            const issue = issues
+              .filter((item) => item.title === process.env.STATE_TITLE && botLogins.has(item.author?.login))
+              .sort((left, right) => left.number - right.number)[0];
             if (issue) process.stdout.write(JSON.stringify(issue));
           ')"
 
@@ -135,7 +138,7 @@ jobs:
         env:
           TSE_MONITOR_CADENCE: ${{ steps.state.outputs.effective_cadence }}
         run: |
-          set -uo pipefail
+          set +e
           output="$(node scripts/tse/sync-metadata.mjs --check 2>&1)"
           exit_code=$?
           set -e
@@ -212,10 +215,13 @@ jobs:
         run: |
           set -euo pipefail
           title="Monitoramento TSE detectou alteração oficial"
-          alerts_json="$(gh issue list --state open --search "$title in:title" --limit 100 --json number,title,author)"
+          alerts_json="$(gh issue list --state open --search "$title in:title" --limit 1000 --json number,title,author)"
           existing="$(ALERTS_JSON="$alerts_json" ALERT_TITLE="$title" node -e '
             const issues = JSON.parse(process.env.ALERTS_JSON);
-            const issue = issues.find((item) => item.title === process.env.ALERT_TITLE && item.author?.login === "github-actions[bot]");
+            const botLogins = new Set(["app/github-actions", "github-actions[bot]"]);
+            const issue = issues
+              .filter((item) => item.title === process.env.ALERT_TITLE && botLogins.has(item.author?.login))
+              .sort((left, right) => left.number - right.number)[0];
             if (issue) process.stdout.write(String(issue.number));
           ')"
           if [[ -n "$existing" ]]; then
